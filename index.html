@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>边狱巴士公司路线计算器</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Limbus Company Planner</p>
+        <h1>边狱巴士公司路线计算器</h1>
+        <p class="hero__description">
+          选择想要的 EGO 饰品，自动推算 1 到 15 层该优先拿哪些卡包，并支持按关键词一键多选与拖拽调整路线顺序。
+        </p>
+      </div>
+      <div class="hero__legend">
+        <div class="legend-card">
+          <span>1 - 5 层</span>
+          <strong>正常</strong>
+        </div>
+        <div class="legend-card">
+          <span>6 - 10 层</span>
+          <strong>平行叠加</strong>
+        </div>
+        <div class="legend-card">
+          <span>11 - 15 层</span>
+          <strong>极限模式</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel panel--filters">
+        <div class="panel__header">
+          <div>
+            <p class="panel__eyebrow">检索与批量选择</p>
+            <h2>目标 EGO 饰品</h2>
+          </div>
+          <button id="clear-selection" class="ghost-button" type="button">清空选择</button>
+        </div>
+
+        <label class="search">
+          <span>搜索 EGO / 关键字 / 卡包</span>
+          <input id="ego-search" type="search" placeholder="例如：烧伤、地狱鸡、二级">
+        </label>
+
+        <div class="keyword-toolbar">
+          <div class="toolbar-title">
+            <span>关键词快速多选</span>
+            <small>点击可切换该关键词下的所有 EGO</small>
+          </div>
+          <div id="keyword-chips" class="chip-list"></div>
+        </div>
+
+        <div id="selected-summary" class="selected-summary">已选择 0 件 EGO 饰品</div>
+        <div id="ego-grid" class="ego-grid"></div>
+      </section>
+
+      <section class="panel panel--results">
+        <div class="panel__header">
+          <div>
+            <p class="panel__eyebrow">自动路线</p>
+            <h2>楼层卡包建议</h2>
+          </div>
+          <button id="recalculate" class="primary-button" type="button">重新计算</button>
+        </div>
+
+        <div class="results-meta">
+          <div class="stat-card">
+            <span>必拿卡包数</span>
+            <strong id="required-pack-count">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>已覆盖 EGO</span>
+            <strong id="covered-ego-count">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>拖拽提示</span>
+            <strong>可手动排序</strong>
+          </div>
+        </div>
+
+        <div id="route-summary" class="route-summary">
+          请选择左侧 EGO 饰品开始计算。
+        </div>
+
+        <div class="route-board__header">
+          <h3>15 层路线</h3>
+          <p>结果区卡片支持拖拽重排，仅改变显示顺序，不会改动底层数据。</p>
+        </div>
+        <div id="route-board" class="route-board"></div>
+      </section>
+    </main>
+  </div>
+
+  <template id="ego-card-template">
+    <article class="ego-card">
+      <label class="ego-card__select">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <img class="ego-card__icon" alt="">
+      <div class="ego-card__body">
+        <div class="ego-card__head">
+          <h3></h3>
+          <span class="ego-card__level"></span>
+        </div>
+        <p class="ego-card__desc"></p>
+        <div class="ego-card__meta"></div>
+      </div>
+    </article>
+  </template>
+
+  <template id="route-card-template">
+    <article class="route-card" draggable="true">
+      <div class="route-card__stage"></div>
+      <img class="route-card__icon" alt="">
+      <div class="route-card__body">
+        <div class="route-card__head">
+          <h3></h3>
+          <span class="route-card__mode"></span>
+        </div>
+        <p class="route-card__reason"></p>
+        <div class="route-card__items"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="./data/ego-items.js"></script>
+  <script src="./data/packs.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
