@@ -82,5 +82,17 @@ window.EGO_ITEMS = [
     allPacks: true,
     acquisition: "卡包掉落",
     icon: "./assets/ego/mercy-thread.svg"
+  },
+  {
+    "id": "mercy-thread1",
+    "name": "11111",
+    "description": "当友方单位恢复体力时，恢复量额外增加 10%，并使速度最低角色获得 1 层护盾。",
+    "level": "一级",
+    "keywords": ["1"],
+    "packDisplay": "所有卡包",
+    "packOptions": [],
+    "allPacks": true,
+    "acquisition": "卡包掉落",
+    "icon": "./assets/ego/mercy-thread.svg"
   }
 ];
