@@ -4,16 +4,11 @@ const stageLabels = {
   extreme: "极限模式",
 };
 
-const stageTypeForFloor = (floor) => {
-  if (floor <= 5) return "normal";
-  if (floor <= 10) return "parallel";
-  return "extreme";
-};
-
 const state = {
   egoItems: [],
   packs: [],
   selectedIds: new Set(),
+  manualPackByFloor: {},
   searchTerm: "",
   routeCards: [],
   keywordList: [],
@@ -33,6 +28,12 @@ const recalculateButton = document.querySelector("#recalculate");
 const egoCardTemplate = document.querySelector("#ego-card-template");
 const routeCardTemplate = document.querySelector("#route-card-template");
 
+function stageTypeForFloor(floor) {
+  if (floor <= 5) return "normal";
+  if (floor <= 10) return "parallel";
+  return "extreme";
+}
+
 function init() {
   state.egoItems = Array.isArray(window.EGO_ITEMS) ? window.EGO_ITEMS : [];
   state.packs = Array.isArray(window.PACKS) ? window.PACKS : [];
@@ -42,7 +43,11 @@ function init() {
   }
 
   state.keywordList = Array.from(
-    new Set(state.egoItems.flatMap((item) => item.keywords))
+    new Set(
+      state.egoItems
+        .flatMap((item) => item.keywords || [])
+        .filter((keyword) => String(keyword || "").trim())
+    )
   ).sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
 
   renderKeywordChips();
@@ -72,6 +77,14 @@ function bindEvents() {
 function renderKeywordChips() {
   keywordChips.innerHTML = "";
 
+  if (!state.keywordList.length) {
+    const empty = document.createElement("span");
+    empty.className = "tag";
+    empty.textContent = "当前 EGO 数据里还没有可用关键词";
+    keywordChips.appendChild(empty);
+    return;
+  }
+
   state.keywordList.forEach((keyword) => {
     const chip = document.createElement("button");
     chip.type = "button";
@@ -80,7 +93,7 @@ function renderKeywordChips() {
 
     chip.addEventListener("click", () => {
       const relatedItems = state.egoItems.filter((item) =>
-        item.keywords.includes(keyword)
+        (item.keywords || []).includes(keyword)
       );
       const isEverySelected = relatedItems.every((item) =>
         state.selectedIds.has(item.id)
@@ -101,7 +114,7 @@ function renderKeywordChips() {
     });
 
     const relatedItems = state.egoItems.filter((item) =>
-      item.keywords.includes(keyword)
+      (item.keywords || []).includes(keyword)
     );
     if (
       relatedItems.length &&
@@ -124,9 +137,9 @@ function renderEgoGrid() {
       item.description,
       item.level,
       item.acquisition,
-      ...item.keywords,
-      ...item.packOptions,
       item.packDisplay,
+      ...(item.keywords || []),
+      ...(item.packOptions || []),
     ]
       .join(" ")
       .toLowerCase();
@@ -151,7 +164,7 @@ function renderEgoGrid() {
     desc.textContent = item.description;
 
     [
-      ...item.keywords.map((keyword) => `关键词：${keyword}`),
+      ...(item.keywords || []).filter(Boolean).map((keyword) => `关键词：${keyword}`),
       `所属卡包：${item.packDisplay}`,
       `获得方式：${item.acquisition}`,
     ].forEach((text) => {
@@ -199,184 +212,181 @@ function toggleSelection(id) {
 
 function calculateRoute() {
   const selectedItems = state.egoItems.filter((item) => state.selectedIds.has(item.id));
-  const packMap = new Map(state.packs.map((pack) => [pack.id, pack]));
-
-  if (!selectedItems.length) {
-    state.routeCards = createPlaceholderRoute();
-    renderRouteBoard();
-    routeSummary.textContent = "请选择左侧 EGO 饰品开始计算。";
-    requiredPackCount.textContent = "0";
-    coveredEgoCount.textContent = "0";
-    return;
-  }
-
+  const selectedKeywords = new Set(
+    selectedItems.flatMap((item) => (item.keywords || []).filter(Boolean))
+  );
   const limitedItems = selectedItems.filter((item) => !item.allPacks);
-  const flexibleItems = selectedItems.filter((item) => item.allPacks);
-  const floorAssignments = new Map();
-  const coveredIds = new Set();
-  const requiredPacks = new Set();
-
-  limitedItems.forEach((item) => {
-    const candidatePacks = item.packOptions
-      .map((packId) => packMap.get(packId))
-      .filter(Boolean)
-      .sort((a, b) => a.floors[0] - b.floors[0]);
-
-    const chosenPack = candidatePacks[0];
-    if (!chosenPack) return;
-
-    const chosenFloor =
-      Array.from(floorAssignments.values()).find(
-        (bucket) => bucket.pack.id === chosenPack.id
-      )?.floor ??
-      chosenPack.floors.find((floor) => !floorAssignments.has(floor)) ??
-      chosenPack.floors[0];
-
-    const bucket = floorAssignments.get(chosenFloor) ?? {
-      floor: chosenFloor,
-      pack: chosenPack,
-      items: [],
-      reason: [],
-      required: true,
-    };
-
-    bucket.items.push(item);
-    bucket.reason.push(`限定饰品 ${item.name}`);
-    floorAssignments.set(chosenFloor, bucket);
-    coveredIds.add(item.id);
-    requiredPacks.add(chosenPack.id);
-  });
-
-  flexibleItems.forEach((item) => {
-    const existingBucket = Array.from(floorAssignments.values())[0];
-    if (existingBucket) {
-      existingBucket.items.push(item);
-      existingBucket.reason.push(`通用饰品 ${item.name}`);
-      coveredIds.add(item.id);
-      return;
-    }
-
-    const earliestPack = [...state.packs].sort((a, b) => a.floors[0] - b.floors[0])[0];
-    const floor = earliestPack?.floors[0] ?? 1;
-    const bucket = floorAssignments.get(floor) ?? {
-      floor,
-      pack: earliestPack ?? {
-        id: "any-pack",
-        name: "任意卡包",
-        icon: "./assets/packs/any-pack.svg",
-        floors: [1],
-      },
-      items: [],
-      reason: [],
-      required: false,
-    };
-    bucket.items.push(item);
-    bucket.reason.push(`通用饰品 ${item.name}`);
-    floorAssignments.set(floor, bucket);
-    coveredIds.add(item.id);
-  });
-
-  const routeMap = new Map();
+  const coveredLimitedPackIds = new Set();
+  const usedPackIds = new Set();
+  const routeCards = [];
 
   for (let floor = 1; floor <= 15; floor += 1) {
-    const assigned = floorAssignments.get(floor);
-    if (assigned) {
-      routeMap.set(floor, {
-        floor,
-        mode: stageTypeForFloor(floor),
-        title: assigned.pack.name,
-        icon: assigned.pack.icon,
-        items: assigned.items.map((item) => item.name),
-        reason: dedupeList(assigned.reason).join("、"),
-        required: assigned.required,
-      });
-      continue;
+    const floorPacks = state.packs.filter(
+      (pack) => Array.isArray(pack.floors) && pack.floors.includes(floor)
+    );
+    const availablePacks = floorPacks.filter((pack) => !usedPackIds.has(pack.id));
+    const manualPackId = state.manualPackByFloor[floor];
+    const manualPack = availablePacks.find((pack) => pack.id === manualPackId) ?? null;
+
+    if (manualPackId && !manualPack) {
+      delete state.manualPackByFloor[floor];
     }
 
-    const packsForFloor = state.packs.filter((pack) => pack.floors.includes(floor));
-    const bestPack = chooseBestOptionalPack(packsForFloor, selectedItems);
+    const chosenPack =
+      manualPack ??
+      chooseBestPackForFloor(
+        availablePacks,
+        limitedItems,
+        coveredLimitedPackIds,
+        selectedKeywords
+      );
 
-    routeMap.set(floor, {
+    if (chosenPack) {
+      usedPackIds.add(chosenPack.id);
+      if (
+        limitedItems.some(
+          (item) =>
+            Array.isArray(item.packOptions) && item.packOptions.includes(chosenPack.id)
+        )
+      ) {
+        coveredLimitedPackIds.add(chosenPack.id);
+      }
+    }
+
+    routeCards.push({
       floor,
       mode: stageTypeForFloor(floor),
-      title: bestPack?.name ?? "暂无匹配卡包",
-      icon: bestPack?.icon ?? "./assets/packs/any-pack.svg",
-      items: bestPack ? suggestOptionalItems(bestPack, selectedItems) : ["可按实际情况自由选择"],
-      reason: bestPack
-        ? bestPack.note
-        : "当前没有已录入的楼层卡包数据，可在数据文件中继续补充。",
-      required: false,
+      isManual: Boolean(manualPack),
+      availableOptions: buildFloorOptions(floorPacks, usedPackIds, chosenPack),
+      ...buildRouteDetails(chosenPack, selectedItems),
     });
   }
 
-  state.routeCards = Array.from(routeMap.values());
+  state.routeCards = routeCards;
   renderRouteBoard();
-
-  const limitedNames = limitedItems.map((item) => item.name);
-  const flexibleNames = flexibleItems.map((item) => item.name);
-  const summaryParts = [];
-
-  if (limitedNames.length) {
-    summaryParts.push(`限定卡包需求：${limitedNames.join("、")}`);
-  }
-  if (flexibleNames.length) {
-    summaryParts.push(`通用饰品可并入已有路线：${flexibleNames.join("、")}`);
-  }
-
-  routeSummary.textContent = summaryParts.join("。");
-  requiredPackCount.textContent = String(requiredPacks.size);
-  coveredEgoCount.textContent = String(coveredIds.size);
+  updateRouteSummary(selectedItems, routeCards);
 }
 
-function chooseBestOptionalPack(packsForFloor, selectedItems) {
-  if (!packsForFloor.length) return null;
-  const selectedKeywords = new Set(selectedItems.flatMap((item) => item.keywords));
+function chooseBestPackForFloor(
+  availablePacks,
+  limitedItems,
+  coveredLimitedPackIds,
+  selectedKeywords
+) {
+  if (!availablePacks.length) return null;
 
-  return [...packsForFloor].sort((a, b) => {
-    const aScore = countKeywordOverlap(a.keywords, selectedKeywords);
-    const bScore = countKeywordOverlap(b.keywords, selectedKeywords);
-    return bScore - aScore;
+  return [...availablePacks].sort((a, b) => {
+    return (
+      scorePack(b, limitedItems, coveredLimitedPackIds, selectedKeywords) -
+      scorePack(a, limitedItems, coveredLimitedPackIds, selectedKeywords)
+    );
   })[0];
 }
 
-function countKeywordOverlap(packKeywords = [], selectedKeywords) {
-  return packKeywords.reduce(
-    (count, keyword) => count + (selectedKeywords.has(keyword) ? 1 : 0),
-    0
-  );
+function scorePack(pack, limitedItems, coveredLimitedPackIds, selectedKeywords) {
+  const unmetLimitedMatches = limitedItems.filter(
+    (item) =>
+      !coveredLimitedPackIds.has(pack.id) &&
+      Array.isArray(item.packOptions) &&
+      item.packOptions.includes(pack.id)
+  ).length;
+  const keywordOverlap = (pack.keywords || []).filter(
+    (keyword) => keyword && selectedKeywords.has(keyword)
+  ).length;
+  const notePenalty = String(pack.note || "").includes("别去") ? -50 : 0;
+  const cursePenalty = String(pack.note || "").includes("诅咒") ? -3 : 0;
+  return unmetLimitedMatches * 100 + keywordOverlap * 10 + notePenalty + cursePenalty;
 }
 
-function suggestOptionalItems(pack, selectedItems) {
-  const matched = selectedItems.filter((item) => {
-    if (item.allPacks) return true;
-    return item.packOptions.includes(pack.id);
-  });
+function buildFloorOptions(floorPacks, usedPackIds, chosenPack) {
+  return floorPacks
+    .filter((pack) => !usedPackIds.has(pack.id) || pack.id === chosenPack?.id)
+    .map((pack) => ({
+      id: pack.id,
+      name: pack.name,
+    }));
+}
 
-  if (!matched.length) {
-    return ["可补强其它路线需求"];
+function buildRouteDetails(chosenPack, selectedItems) {
+  if (!chosenPack) {
+    return {
+      title: "本层已无可选卡包",
+      packId: null,
+      icon: "./assets/packs/any-pack.svg",
+      items: ["前面楼层已占用所有可出现卡包"],
+      reason: "由于你前面已经选走了候选卡包，这一层不再重复出现相同卡包。",
+      required: false,
+    };
   }
 
-  return matched.map((item) => item.name);
+  const coveredNames = selectedItems
+    .filter((item) => doesPackCoverItem(chosenPack, item))
+    .map((item) => item.name);
+
+  const required = selectedItems.some(
+    (item) =>
+      !item.allPacks &&
+      Array.isArray(item.packOptions) &&
+      item.packOptions.includes(chosenPack.id)
+  );
+
+  const reasonParts = [];
+  if (required) {
+    reasonParts.push("包含所选限定 EGO 所需卡包。");
+  }
+  if (chosenPack.note) {
+    reasonParts.push(chosenPack.note);
+  }
+  if (!reasonParts.length) {
+    reasonParts.push("根据当前楼层和已选路线自动推荐。");
+  }
+
+  return {
+    title: chosenPack.name,
+    packId: chosenPack.id,
+    icon: chosenPack.icon,
+    items: coveredNames.length ? coveredNames : ["可按当前战况自由补强"],
+    reason: reasonParts.join(" "),
+    required,
+  };
 }
 
-function createPlaceholderRoute() {
-  return Array.from({ length: 15 }, (_, index) => {
-    const floor = index + 1;
-    return {
-      floor,
-      mode: stageTypeForFloor(floor),
-      title: "等待选择目标饰品",
-      icon: "./assets/packs/any-pack.svg",
-      items: ["拖拽排序在计算后启用"],
-      reason: "选中左侧 EGO 饰品后，这里会展示推荐卡包路线。",
-      required: false,
-      placeholder: true,
-    };
-  });
+function doesPackCoverItem(pack, item) {
+  if (item.allPacks) return Boolean(pack);
+  return Array.isArray(item.packOptions) && item.packOptions.includes(pack.id);
 }
 
-function dedupeList(list) {
-  return Array.from(new Set(list));
+function updateRouteSummary(selectedItems, routeCards) {
+  const chosenPackIds = new Set(routeCards.map((card) => card.packId).filter(Boolean));
+  const coveredIds = new Set(
+    selectedItems
+      .filter((item) => {
+        if (item.allPacks) return chosenPackIds.size > 0;
+        return (item.packOptions || []).some((packId) => chosenPackIds.has(packId));
+      })
+      .map((item) => item.id)
+  );
+
+  const requiredPackIds = new Set(
+    selectedItems
+      .filter((item) => !item.allPacks)
+      .flatMap((item) =>
+        (item.packOptions || []).filter((packId) => chosenPackIds.has(packId))
+      )
+  );
+
+  const manualCount = Object.keys(state.manualPackByFloor).length;
+
+  if (!selectedItems.length) {
+    routeSummary.textContent = manualCount
+      ? `已手动锁定 ${manualCount} 层卡包。未选择 EGO 时，系统会按楼层可选卡包自动补齐剩余路线。`
+      : "未选择 EGO 时，系统会先按楼层自动排一条不重复的基础路线；你也可以直接在右侧手动改卡包。";
+  } else {
+    routeSummary.textContent = `已覆盖 ${coveredIds.size} / ${selectedItems.length} 件目标 EGO，必需卡包 ${requiredPackIds.size} 个，手动锁定 ${manualCount} 层。已选过的卡包不会在后续楼层再次出现。`;
+  }
+
+  requiredPackCount.textContent = String(requiredPackIds.size);
+  coveredEgoCount.textContent = String(coveredIds.size);
 }
 
 function renderRouteBoard() {
@@ -386,7 +396,7 @@ function renderRouteBoard() {
     const node = routeCardTemplate.content.firstElementChild.cloneNode(true);
     node.dataset.floor = String(card.floor);
     node.classList.add(`stage-${card.mode}`);
-    if (card.placeholder) node.classList.add("is-placeholder");
+    if (card.isManual) node.classList.add("is-manual");
 
     const stage = node.querySelector(".route-card__stage");
     const icon = node.querySelector(".route-card__icon");
@@ -394,13 +404,53 @@ function renderRouteBoard() {
     const mode = node.querySelector(".route-card__mode");
     const reason = node.querySelector(".route-card__reason");
     const items = node.querySelector(".route-card__items");
+    const select = node.querySelector("select");
+    const resetButton = node.querySelector(".route-card__reset");
 
-    stage.innerHTML = `第 ${card.floor} 层<br>${card.required ? "优先拿取" : "可选补强"}`;
+    stage.innerHTML = `第 ${card.floor} 层<br>${card.required ? "优先拿取" : card.isManual ? "手动锁定" : "自动推荐"}`;
     icon.src = card.icon;
     icon.alt = card.title;
     title.textContent = card.title;
     mode.textContent = stageLabels[card.mode];
     reason.textContent = card.reason;
+
+    const autoOption = document.createElement("option");
+    autoOption.value = "";
+    autoOption.textContent = "自动选择";
+    select.appendChild(autoOption);
+
+    card.availableOptions.forEach((option) => {
+      const selectOption = document.createElement("option");
+      selectOption.value = option.id;
+      selectOption.textContent = option.name;
+      select.appendChild(selectOption);
+    });
+
+    select.value = state.manualPackByFloor[card.floor] ?? "";
+
+    select.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+    select.addEventListener("change", (event) => {
+      const nextValue = event.target.value;
+      if (nextValue) {
+        state.manualPackByFloor[card.floor] = nextValue;
+      } else {
+        delete state.manualPackByFloor[card.floor];
+      }
+      calculateRoute();
+    });
+
+    resetButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      delete state.manualPackByFloor[card.floor];
+      calculateRoute();
+    });
+
+    if (!card.availableOptions.length) {
+      select.disabled = true;
+      resetButton.disabled = true;
+    }
 
     card.items.forEach((item) => {
       const tag = document.createElement("span");
@@ -415,7 +465,11 @@ function renderRouteBoard() {
 }
 
 function attachDragEvents(node) {
-  node.addEventListener("dragstart", () => {
+  node.addEventListener("dragstart", (event) => {
+    if (["SELECT", "BUTTON", "OPTION"].includes(event.target.tagName)) {
+      event.preventDefault();
+      return;
+    }
     node.classList.add("dragging");
   });
 

@@ -155,7 +155,6 @@ body::before {
 .panel__header,
 .route-board__header,
 .toolbar-title,
-.route-card__head,
 .ego-card__head {
   display: flex;
   justify-content: space-between;
@@ -317,10 +316,50 @@ body::before {
   font-size: 18px;
 }
 
+.route-card__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
 .ego-card__level,
 .route-card__mode {
   font-size: 13px;
   color: var(--accent-2);
+}
+
+.route-card__controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.route-card__picker {
+  display: grid;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.route-card__picker span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.route-card__picker select {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.route-card__reset {
+  padding: 10px 14px;
+  white-space: nowrap;
 }
 
 .ego-card__desc {
@@ -409,6 +448,11 @@ body::before {
   border-style: dashed;
 }
 
+.route-card.is-manual {
+  border-color: rgba(225, 111, 61, 0.45);
+  background: rgba(225, 111, 61, 0.08);
+}
+
 .stage-normal .route-card__stage {
   border-color: rgba(123, 192, 150, 0.28);
 }
@@ -447,6 +491,16 @@ body::before {
   .ego-card,
   .route-card {
     grid-template-columns: 1fr;
+  }
+
+  .route-card__head,
+  .route-card__controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .route-card__picker {
+    min-width: 100%;
   }
 
   .ego-card__icon {
