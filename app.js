@@ -216,19 +216,35 @@ async function copyPlanShareText() {
 }
 
 async function applyPlanCodeFromInput() {
-  const rawCode = planCodeInput.value.trim();
-  if (!rawCode) {
+  const rawInput = planCodeInput.value.trim();
+  if (!rawInput) {
     updatePlanStatus("请先输入方案码。");
     return;
   }
 
   try {
-    const plan = await decodePlanCode(rawCode);
+    const planCode = extractPlanCode(rawInput);
+    const plan = await decodePlanCode(planCode);
+    planCodeInput.value = planCode;
     applyImportedPlan(plan);
     updatePlanStatus(`方案码应用成功：已恢复 ${state.selectedIds.size} 件 EGO 与 ${Object.keys(state.manualPackByFloor).length} 层手动卡包。`);
   } catch (error) {
     updatePlanStatus(`方案码无效：${error.message}`);
   }
+}
+
+function extractPlanCode(input) {
+  const direct = input.trim();
+  if (direct.startsWith("EGO1.")) {
+    return direct;
+  }
+
+  const matched = input.match(/EGO1\.[A-Za-z0-9\-_]+/);
+  if (matched) {
+    return matched[0];
+  }
+
+  throw new Error("未识别到有效方案码。");
 }
 
 async function encodePlanCode(plan) {
