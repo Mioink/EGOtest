@@ -10,8 +10,13 @@ const state = {
   selectedIds: new Set(),
   manualPackByFloor: {},
   searchTerm: "",
+  keywordFilter: "",
+  levelFilter: "",
+  packTypeFilter: "",
+  selectedFilter: "",
   routeCards: [],
   keywordList: [],
+  levelList: [],
 };
 
 const egoGrid = document.querySelector("#ego-grid");
@@ -22,6 +27,10 @@ const routeSummary = document.querySelector("#route-summary");
 const requiredPackCount = document.querySelector("#required-pack-count");
 const coveredEgoCount = document.querySelector("#covered-ego-count");
 const searchInput = document.querySelector("#ego-search");
+const keywordFilterSelect = document.querySelector("#ego-keyword-filter");
+const levelFilterSelect = document.querySelector("#ego-level-filter");
+const packTypeFilterSelect = document.querySelector("#ego-pack-type-filter");
+const selectedFilterSelect = document.querySelector("#ego-selected-filter");
 const clearSelectionButton = document.querySelector("#clear-selection");
 const recalculateButton = document.querySelector("#recalculate");
 
@@ -49,7 +58,11 @@ function init() {
         .filter((keyword) => String(keyword || "").trim())
     )
   ).sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
+  state.levelList = Array.from(
+    new Set(state.egoItems.map((item) => item.level).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
 
+  renderFilterOptions();
   renderKeywordChips();
   renderEgoGrid();
   calculateRoute();
@@ -62,8 +75,38 @@ function bindEvents() {
     renderEgoGrid();
   });
 
+  keywordFilterSelect.addEventListener("change", (event) => {
+    state.keywordFilter = event.target.value;
+    renderEgoGrid();
+  });
+
+  levelFilterSelect.addEventListener("change", (event) => {
+    state.levelFilter = event.target.value;
+    renderEgoGrid();
+  });
+
+  packTypeFilterSelect.addEventListener("change", (event) => {
+    state.packTypeFilter = event.target.value;
+    renderEgoGrid();
+  });
+
+  selectedFilterSelect.addEventListener("change", (event) => {
+    state.selectedFilter = event.target.value;
+    renderEgoGrid();
+  });
+
   clearSelectionButton.addEventListener("click", () => {
     state.selectedIds.clear();
+    state.searchTerm = "";
+    state.keywordFilter = "";
+    state.levelFilter = "";
+    state.packTypeFilter = "";
+    state.selectedFilter = "";
+    searchInput.value = "";
+    keywordFilterSelect.value = "";
+    levelFilterSelect.value = "";
+    packTypeFilterSelect.value = "";
+    selectedFilterSelect.value = "";
     renderEgoGrid();
     updateSelectedSummary();
     calculateRoute();
@@ -71,6 +114,25 @@ function bindEvents() {
 
   recalculateButton.addEventListener("click", () => {
     calculateRoute();
+  });
+}
+
+function renderFilterOptions() {
+  keywordFilterSelect.innerHTML = '<option value="">全部关键词</option>';
+  levelFilterSelect.innerHTML = '<option value="">全部等级</option>';
+
+  state.keywordList.forEach((keyword) => {
+    const option = document.createElement("option");
+    option.value = keyword;
+    option.textContent = keyword;
+    keywordFilterSelect.appendChild(option);
+  });
+
+  state.levelList.forEach((level) => {
+    const option = document.createElement("option");
+    option.value = level;
+    option.textContent = level;
+    levelFilterSelect.appendChild(option);
   });
 }
 
@@ -131,7 +193,6 @@ function renderEgoGrid() {
   egoGrid.innerHTML = "";
 
   const filteredItems = state.egoItems.filter((item) => {
-    if (!state.searchTerm) return true;
     const searchable = [
       item.name,
       item.description,
@@ -143,7 +204,36 @@ function renderEgoGrid() {
     ]
       .join(" ")
       .toLowerCase();
-    return searchable.includes(state.searchTerm);
+
+    if (state.searchTerm && !searchable.includes(state.searchTerm)) {
+      return false;
+    }
+
+    if (state.keywordFilter && !(item.keywords || []).includes(state.keywordFilter)) {
+      return false;
+    }
+
+    if (state.levelFilter && item.level !== state.levelFilter) {
+      return false;
+    }
+
+    if (state.packTypeFilter === "limited" && item.allPacks) {
+      return false;
+    }
+
+    if (state.packTypeFilter === "all-packs" && !item.allPacks) {
+      return false;
+    }
+
+    if (state.selectedFilter === "selected" && !state.selectedIds.has(item.id)) {
+      return false;
+    }
+
+    if (state.selectedFilter === "unselected" && state.selectedIds.has(item.id)) {
+      return false;
+    }
+
+    return true;
   });
 
   filteredItems.forEach((item) => {

@@ -50,6 +50,37 @@
           <input id="ego-search" type="search" placeholder="例如：烧伤、地狱鸡、二级">
         </label>
 
+        <div class="filter-grid">
+          <label class="filter-field">
+            <span>关键词筛选</span>
+            <select id="ego-keyword-filter">
+              <option value="">全部关键词</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>等级筛选</span>
+            <select id="ego-level-filter">
+              <option value="">全部等级</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>卡包限定</span>
+            <select id="ego-pack-type-filter">
+              <option value="">全部类型</option>
+              <option value="limited">仅卡包限定</option>
+              <option value="all-packs">仅所有卡包</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>选择状态</span>
+            <select id="ego-selected-filter">
+              <option value="">全部 EGO</option>
+              <option value="selected">只看已选 EGO</option>
+              <option value="unselected">只看未选 EGO</option>
+            </select>
+          </label>
+        </div>
+
         <div class="keyword-toolbar">
           <div class="toolbar-title">
             <span>关键词快速多选</span>
