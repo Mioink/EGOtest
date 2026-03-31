@@ -4,6 +4,7 @@ const stageLabels = {
   extreme: "极限模式",
 };
 
+// 页面主要状态集中维护，避免筛选、路线和方案码逻辑各自持有副本。
 const state = {
   egoItems: [],
   packs: [],
@@ -154,6 +155,7 @@ function renderFilterOptions() {
   });
 }
 
+// 方案码只保存恢复当前界面所需的最小信息，方便分享与版本兼容。
 function buildPlanPayload() {
   return {
     version: 1,
@@ -234,6 +236,7 @@ async function applyPlanCodeFromInput() {
 }
 
 function extractPlanCode(input) {
+  // 允许用户粘贴纯方案码，或从整段分享文本里自动抽取方案码。
   const direct = input.trim();
   if (direct.startsWith("EGO1.")) {
     return direct;
@@ -248,6 +251,7 @@ function extractPlanCode(input) {
 }
 
 async function encodePlanCode(plan) {
+  // 分享前先把字段压缩成短键，再走压缩与 base64url，尽量缩短方案码长度。
   const compactPlan = {
     v: 1,
     s: Array.from(plan.selectedIds || []),
@@ -367,6 +371,7 @@ function applyImportedPlan(plan) {
   });
   state.manualPackByFloor = nextManualPackByFloor;
 
+  // 导入时只恢复当前版本仍然存在的筛选值，避免旧方案污染新界面。
   const filters = plan.filters || {};
   state.searchTerm = String(filters.searchTerm || "").toLowerCase();
   state.keywordFilter = state.keywordList.includes(filters.keywordFilter)
@@ -456,6 +461,7 @@ function renderKeywordChips() {
 function renderEgoGrid() {
   egoGrid.innerHTML = "";
 
+  // 所有筛选条件统一在这里串联，后续扩展筛选时直接继续追加判断即可。
   const filteredItems = state.egoItems.filter((item) => {
     const searchable = [
       item.name,
@@ -565,6 +571,7 @@ function toggleSelection(id) {
 }
 
 function calculateRoute() {
+  // 路线按楼层顺序逐层分配，保证前面已占用的卡包不会在后面重复出现。
   const selectedItems = state.egoItems.filter((item) => state.selectedIds.has(item.id));
   const selectedKeywords = new Set(
     selectedItems.flatMap((item) => (item.keywords || []).filter(Boolean))
@@ -629,6 +636,7 @@ function chooseBestPackForFloor(
 ) {
   if (!availablePacks.length) return null;
 
+  // 自动推荐只在“当前楼层仍可选的卡包”之间比较，不做跨楼层回溯。
   return [...availablePacks].sort((a, b) => {
     return (
       scorePack(b, limitedItems, coveredLimitedPackIds, selectedKeywords) -
@@ -638,6 +646,7 @@ function chooseBestPackForFloor(
 }
 
 function scorePack(pack, limitedItems, coveredLimitedPackIds, selectedKeywords) {
+  // 权重顺序：未满足的限定需求 > 关键词契合度 > 备注惩罚。
   const unmetLimitedMatches = limitedItems.filter(
     (item) =>
       !coveredLimitedPackIds.has(pack.id) &&
@@ -747,6 +756,7 @@ function updateRouteSummary(selectedItems, routeCards) {
 function renderRouteBoard() {
   routeBoard.innerHTML = "";
 
+  // 路线区完全依赖 state.routeCards 渲染，修改楼层 UI 时优先改这里和模板。
   state.routeCards.forEach((card) => {
     const node = routeCardTemplate.content.firstElementChild.cloneNode(true);
     node.dataset.floor = String(card.floor);
@@ -854,6 +864,7 @@ function attachDragEvents(node) {
 }
 
 function syncRouteOrder() {
+  // 拖拽只调整展示顺序，不反推楼层分配计算。
   const orderedFloors = Array.from(routeBoard.children).map((child) =>
     Number(child.dataset.floor)
   );
