@@ -399,17 +399,17 @@ body::before {
 
 .route-board {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .route-card {
   display: grid;
-  grid-template-columns: 88px 94px 1fr;
-  gap: 16px;
-  align-items: stretch;
-  padding: 16px;
+  grid-template-columns: 74px 72px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
   background: rgba(255, 255, 255, 0.035);
-  border-radius: var(--radius-lg);
+  border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   cursor: grab;
 }
@@ -420,28 +420,42 @@ body::before {
 }
 
 .route-card__stage {
-  border-radius: 18px;
+  border-radius: 14px;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 12px;
+  min-height: 100%;
+  padding: 10px 8px;
   background: linear-gradient(160deg, rgba(225, 111, 61, 0.22), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(225, 111, 61, 0.18);
   font-weight: 700;
+  font-size: 13px;
 }
 
 .route-card__icon {
   aspect-ratio: 3 / 4;
+  border-radius: 14px;
 }
 
 .route-card__reason {
-  margin: 8px 0 12px;
-  line-height: 1.7;
+  margin: 6px 0 10px;
+  line-height: 1.55;
+  font-size: 13px;
 }
 
 .route-card__items .tag {
   background: rgba(214, 186, 115, 0.08);
   border-color: rgba(214, 186, 115, 0.18);
+}
+
+.tag--limited {
+  font-size: 11px;
+  padding: 5px 9px;
+}
+
+.tag--empty {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .route-card.is-placeholder {

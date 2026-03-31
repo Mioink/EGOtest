@@ -258,7 +258,7 @@ function calculateRoute() {
       mode: stageTypeForFloor(floor),
       isManual: Boolean(manualPack),
       availableOptions: buildFloorOptions(floorPacks, usedPackIds, chosenPack),
-      ...buildRouteDetails(chosenPack, selectedItems),
+      ...buildRouteDetails(chosenPack, limitedItems),
     });
   }
 
@@ -307,25 +307,25 @@ function buildFloorOptions(floorPacks, usedPackIds, chosenPack) {
     }));
 }
 
-function buildRouteDetails(chosenPack, selectedItems) {
+function buildRouteDetails(chosenPack, limitedItems) {
   if (!chosenPack) {
     return {
       title: "本层已无可选卡包",
       packId: null,
       icon: "./assets/packs/any-pack.svg",
-      items: ["前面楼层已占用所有可出现卡包"],
+      items: [],
+      limitedCount: 0,
       reason: "由于你前面已经选走了候选卡包，这一层不再重复出现相同卡包。",
       required: false,
     };
   }
 
-  const coveredNames = selectedItems
+  const coveredNames = limitedItems
     .filter((item) => doesPackCoverItem(chosenPack, item))
     .map((item) => item.name);
 
-  const required = selectedItems.some(
+  const required = limitedItems.some(
     (item) =>
-      !item.allPacks &&
       Array.isArray(item.packOptions) &&
       item.packOptions.includes(chosenPack.id)
   );
@@ -345,7 +345,8 @@ function buildRouteDetails(chosenPack, selectedItems) {
     title: chosenPack.name,
     packId: chosenPack.id,
     icon: chosenPack.icon,
-    items: coveredNames.length ? coveredNames : ["可按当前战况自由补强"],
+    items: coveredNames,
+    limitedCount: coveredNames.length,
     reason: reasonParts.join(" "),
     required,
   };
@@ -358,6 +359,7 @@ function doesPackCoverItem(pack, item) {
 
 function updateRouteSummary(selectedItems, routeCards) {
   const chosenPackIds = new Set(routeCards.map((card) => card.packId).filter(Boolean));
+  const limitedSelectedItems = selectedItems.filter((item) => !item.allPacks);
   const coveredIds = new Set(
     selectedItems
       .filter((item) => {
@@ -368,8 +370,7 @@ function updateRouteSummary(selectedItems, routeCards) {
   );
 
   const requiredPackIds = new Set(
-    selectedItems
-      .filter((item) => !item.allPacks)
+    limitedSelectedItems
       .flatMap((item) =>
         (item.packOptions || []).filter((packId) => chosenPackIds.has(packId))
       )
@@ -382,7 +383,7 @@ function updateRouteSummary(selectedItems, routeCards) {
       ? `已手动锁定 ${manualCount} 层卡包。未选择 EGO 时，系统会按楼层可选卡包自动补齐剩余路线。`
       : "未选择 EGO 时，系统会先按楼层自动排一条不重复的基础路线；你也可以直接在右侧手动改卡包。";
   } else {
-    routeSummary.textContent = `已覆盖 ${coveredIds.size} / ${selectedItems.length} 件目标 EGO，必需卡包 ${requiredPackIds.size} 个，手动锁定 ${manualCount} 层。已选过的卡包不会在后续楼层再次出现。`;
+    routeSummary.textContent = `已覆盖 ${coveredIds.size} / ${selectedItems.length} 件目标 EGO，其中卡包限定 ${requiredPackIds.size} 个需求已进入路线。楼层区域现在只展示各卡包可获得的限定 EGO，手动锁定 ${manualCount} 层。`;
   }
 
   requiredPackCount.textContent = String(requiredPackIds.size);
@@ -412,7 +413,9 @@ function renderRouteBoard() {
     icon.alt = card.title;
     title.textContent = card.title;
     mode.textContent = stageLabels[card.mode];
-    reason.textContent = card.reason;
+    reason.textContent = card.limitedCount
+      ? `${card.reason} 本层可获得 ${card.limitedCount} 件已选限定 EGO。`
+      : `${card.reason} 本层没有已选卡包限定 EGO。`;
 
     const autoOption = document.createElement("option");
     autoOption.value = "";
@@ -452,12 +455,19 @@ function renderRouteBoard() {
       resetButton.disabled = true;
     }
 
-    card.items.forEach((item) => {
-      const tag = document.createElement("span");
-      tag.className = "tag";
-      tag.textContent = item;
-      items.appendChild(tag);
-    });
+    if (card.items.length) {
+      card.items.forEach((item) => {
+        const tag = document.createElement("span");
+        tag.className = "tag tag--limited";
+        tag.textContent = item;
+        items.appendChild(tag);
+      });
+    } else {
+      const empty = document.createElement("span");
+      empty.className = "tag tag--empty";
+      empty.textContent = "无已选限定 EGO";
+      items.appendChild(empty);
+    }
 
     attachDragEvents(node);
     routeBoard.appendChild(node);

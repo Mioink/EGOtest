@@ -3855,13 +3855,14 @@ window.EGO_ITEMS = [
     "id": "9248",
     "name": "山茶花、眼镜和送达的信",
     "description": "[第1、第2、第3顺位友方单位专属] 增加破裂强度或施加破裂层数的攻击技能拼点胜利时，使目标增加5级破裂强度并对其施加3层破裂(每回合每名友方单位最多1次) 与速度值低于自身的敌方单位拼点时，使自身的最终威力+1，造成的伤害+25%。 与带有攻击等级提升的敌方单位拼点胜利时，下回合使自身获得3层攻击等级提升并对拼点失败的敌方单位施加3层攻击等级降低(每回合每名友方单位最多3次)",
-    "level": "四级",
     "keywords": [
       "破裂"
     ],
-    "packDisplay": "所有卡包",
-    "packOptions": [],
-    "allPacks": true,
+    "packDisplay": "无改变者",
+    "packOptions": [
+      "12"
+    ],
+    "allPacks": false,
     "acquisition": "困难合成",
     "icon": "./assets/ego/9248.png",
     "cost": "401",
@@ -4111,9 +4112,11 @@ window.EGO_ITEMS = [
     "keywords": [
       "破裂"
     ],
-    "packDisplay": "所有卡包",
-    "packOptions": [],
-    "allPacks": true,
+    "packDisplay": "无改变者",
+    "packOptions": [
+      "12"
+    ],
+    "allPacks": false,
     "acquisition": "合成",
     "icon": "./assets/ego/9424.png",
     "cost": "399",
@@ -4226,7 +4229,9 @@ window.EGO_ITEMS = [
     "name": "首席管家的秘籍",
     "description": "波次的首个回合开始时，选择速度值最低的1名敌方单位(若是异想体，则随机1个部位)，从下回合起，5回合内对其施加5层束缚。 拼点胜利时，若自身的速度值高于目标，则使自身恢复相当于速度差的理智值，并使拼点胜利的技能增加相当于速度差一半的攻击等级(仅适用于拼点胜利的技能。最多增加3级)。",
     "level": "三级",
-    "keywords": [],
+    "keywords": [
+      "震颤"
+    ],
     "packDisplay": "某个世界",
     "packOptions": [
       "17"
@@ -4245,9 +4250,11 @@ window.EGO_ITEMS = [
     "keywords": [
       "震颤"
     ],
-    "packDisplay": "所有卡包",
-    "packOptions": [],
-    "allPacks": true,
+    "packDisplay": "某个世界",
+    "packOptions": [
+      "17"
+    ],
+    "allPacks": false,
     "acquisition": "合成",
     "icon": "./assets/ego/9434.png",
     "cost": "404",
