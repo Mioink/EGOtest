@@ -166,6 +166,61 @@ body::before {
   margin-bottom: 18px;
 }
 
+.panel__header-copy {
+  min-width: 0;
+}
+
+.panel__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.plan-status {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.share-code-panel {
+  margin-bottom: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.share-code-field {
+  display: grid;
+  gap: 8px;
+}
+
+.share-code-field span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.share-code-field textarea {
+  width: 100%;
+  min-height: 88px;
+  resize: vertical;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(12, 14, 20, 0.96);
+  color: #fff8ef;
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.share-code-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .primary-button,
 .ghost-button,
 .chip {
@@ -537,6 +592,13 @@ body::before {
 
   .filter-grid {
     grid-template-columns: 1fr;
+  }
+
+  .panel__header,
+  .panel__actions,
+  .share-code-actions {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .ego-card,

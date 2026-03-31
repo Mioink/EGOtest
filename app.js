@@ -31,6 +31,14 @@ const keywordFilterSelect = document.querySelector("#ego-keyword-filter");
 const levelFilterSelect = document.querySelector("#ego-level-filter");
 const packTypeFilterSelect = document.querySelector("#ego-pack-type-filter");
 const selectedFilterSelect = document.querySelector("#ego-selected-filter");
+const exportPlanButton = document.querySelector("#export-plan");
+const copyPlanButton = document.querySelector("#copy-plan");
+const copyPlanShareButton = document.querySelector("#copy-plan-share");
+const importPlanButton = document.querySelector("#import-plan");
+const planFileInput = document.querySelector("#plan-file-input");
+const planStatus = document.querySelector("#plan-status");
+const planCodeInput = document.querySelector("#plan-code-input");
+const applyPlanCodeButton = document.querySelector("#apply-plan-code");
 const clearSelectionButton = document.querySelector("#clear-selection");
 const recalculateButton = document.querySelector("#recalculate");
 
@@ -95,6 +103,33 @@ function bindEvents() {
     renderEgoGrid();
   });
 
+  exportPlanButton.addEventListener("click", () => {
+    exportPlan();
+  });
+
+  copyPlanButton.addEventListener("click", async () => {
+    await copyPlanToClipboard();
+  });
+
+  copyPlanShareButton.addEventListener("click", async () => {
+    await copyPlanShareText();
+  });
+
+  applyPlanCodeButton.addEventListener("click", async () => {
+    await applyPlanCodeFromInput();
+  });
+
+  importPlanButton.addEventListener("click", () => {
+    planFileInput.click();
+  });
+
+  planFileInput.addEventListener("change", async (event) => {
+    const [file] = event.target.files || [];
+    if (!file) return;
+    await importPlan(file);
+    planFileInput.value = "";
+  });
+
   clearSelectionButton.addEventListener("click", () => {
     state.selectedIds.clear();
     state.searchTerm = "";
@@ -107,6 +142,7 @@ function bindEvents() {
     levelFilterSelect.value = "";
     packTypeFilterSelect.value = "";
     selectedFilterSelect.value = "";
+    updatePlanStatus("已清空选择与筛选条件。");
     renderEgoGrid();
     updateSelectedSummary();
     calculateRoute();
@@ -134,6 +170,264 @@ function renderFilterOptions() {
     option.textContent = level;
     levelFilterSelect.appendChild(option);
   });
+}
+
+function exportPlan() {
+  const plan = buildPlanPayload();
+  const blob = new Blob([JSON.stringify(plan, null, 2)], {
+    type: "application/json;charset=utf-8",
+  });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+  anchor.href = url;
+  anchor.download = `limbus-route-plan-${timestamp}.json`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  URL.revokeObjectURL(url);
+  updatePlanStatus(`方案已导出，包含 ${plan.selectedIds.length} 件已选 EGO。`);
+}
+
+function buildPlanPayload() {
+  return {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    selectedIds: Array.from(state.selectedIds),
+    manualPackByFloor: state.manualPackByFloor,
+    filters: {
+      searchTerm: state.searchTerm,
+      keywordFilter: state.keywordFilter,
+      levelFilter: state.levelFilter,
+      packTypeFilter: state.packTypeFilter,
+      selectedFilter: state.selectedFilter,
+    },
+  };
+}
+
+async function copyPlanToClipboard() {
+  const planCode = await encodePlanCode(buildPlanPayload());
+  planCodeInput.value = planCode;
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(planCode);
+    } else {
+      copyTextWithTextarea(planCode);
+    }
+    updatePlanStatus(`方案码已复制到剪贴板，长度 ${planCode.length}。`);
+  } catch (error) {
+    try {
+      copyTextWithTextarea(planCode);
+      updatePlanStatus(`方案码已复制到剪贴板，长度 ${planCode.length}。`);
+    } catch (fallbackError) {
+      updatePlanStatus(`复制失败：${fallbackError.message || error.message}`);
+    }
+  }
+}
+
+async function copyPlanShareText() {
+  const planCode = planCodeInput.value.trim() || await encodePlanCode(buildPlanPayload());
+  planCodeInput.value = planCode;
+  const selectedCount = state.selectedIds.size;
+  const manualCount = Object.keys(state.manualPackByFloor).length;
+  const shareText = `边狱巴士路线方案码\n方案码：${planCode}\n已选EGO：${selectedCount}件\n手动锁定楼层：${manualCount}层`;
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(shareText);
+    } else {
+      copyTextWithTextarea(shareText);
+    }
+    updatePlanStatus("带标题的分享文本已复制到剪贴板。");
+  } catch (error) {
+    try {
+      copyTextWithTextarea(shareText);
+      updatePlanStatus("带标题的分享文本已复制到剪贴板。");
+    } catch (fallbackError) {
+      updatePlanStatus(`复制失败：${fallbackError.message || error.message}`);
+    }
+  }
+}
+
+async function applyPlanCodeFromInput() {
+  const rawCode = planCodeInput.value.trim();
+  if (!rawCode) {
+    updatePlanStatus("请先输入方案码。");
+    return;
+  }
+
+  try {
+    const plan = await decodePlanCode(rawCode);
+    applyImportedPlan(plan);
+    updatePlanStatus(`方案码应用成功：已恢复 ${state.selectedIds.size} 件 EGO 与 ${Object.keys(state.manualPackByFloor).length} 层手动卡包。`);
+  } catch (error) {
+    updatePlanStatus(`方案码无效：${error.message}`);
+  }
+}
+
+async function encodePlanCode(plan) {
+  const compactPlan = {
+    v: 1,
+    s: Array.from(plan.selectedIds || []),
+    m: plan.manualPackByFloor || {},
+    f: [
+      plan.filters?.searchTerm || "",
+      plan.filters?.keywordFilter || "",
+      plan.filters?.levelFilter || "",
+      plan.filters?.packTypeFilter || "",
+      plan.filters?.selectedFilter || "",
+    ],
+  };
+
+  const json = JSON.stringify(compactPlan);
+  const encoded = await compressText(json);
+  return `EGO1.${encoded}`;
+}
+
+async function decodePlanCode(code) {
+  const trimmed = code.trim();
+  if (!trimmed.startsWith("EGO1.")) {
+    throw new Error("缺少有效前缀。");
+  }
+
+  const body = trimmed.slice(5);
+  const json = await decompressText(body);
+  const compactPlan = JSON.parse(json);
+
+  return {
+    version: compactPlan.v || 1,
+    selectedIds: Array.isArray(compactPlan.s) ? compactPlan.s : [],
+    manualPackByFloor: compactPlan.m && typeof compactPlan.m === "object" ? compactPlan.m : {},
+    filters: {
+      searchTerm: compactPlan.f?.[0] || "",
+      keywordFilter: compactPlan.f?.[1] || "",
+      levelFilter: compactPlan.f?.[2] || "",
+      packTypeFilter: compactPlan.f?.[3] || "",
+      selectedFilter: compactPlan.f?.[4] || "",
+    },
+  };
+}
+
+async function compressText(text) {
+  const bytes = new TextEncoder().encode(text);
+  if (typeof CompressionStream !== "undefined") {
+    const stream = new Blob([bytes]).stream().pipeThrough(new CompressionStream("gzip"));
+    const compressed = await new Response(stream).arrayBuffer();
+    return base64UrlEncode(new Uint8Array(compressed));
+  }
+  return base64UrlEncode(bytes);
+}
+
+async function decompressText(payload) {
+  const bytes = base64UrlDecode(payload);
+  if (typeof DecompressionStream !== "undefined") {
+    try {
+      const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+      return await new Response(stream).text();
+    } catch (error) {
+      return new TextDecoder().decode(bytes);
+    }
+  }
+  return new TextDecoder().decode(bytes);
+}
+
+function base64UrlEncode(bytes) {
+  let binary = "";
+  bytes.forEach((byte) => {
+    binary += String.fromCharCode(byte);
+  });
+  return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+}
+
+function base64UrlDecode(value) {
+  const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
+  const padded = normalized + "=".repeat((4 - (normalized.length % 4 || 4)) % 4);
+  const binary = atob(padded);
+  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+}
+
+function copyTextWithTextarea(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  textarea.style.pointerEvents = "none";
+  document.body.appendChild(textarea);
+  textarea.select();
+  textarea.setSelectionRange(0, textarea.value.length);
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  if (!copied) {
+    throw new Error("浏览器未允许复制到剪贴板。");
+  }
+}
+
+async function importPlan(file) {
+  try {
+    const text = await file.text();
+    const plan = JSON.parse(text);
+    applyImportedPlan(plan);
+    updatePlanStatus(`方案导入成功：已恢复 ${state.selectedIds.size} 件 EGO 与 ${Object.keys(state.manualPackByFloor).length} 层手动卡包。`);
+  } catch (error) {
+    updatePlanStatus(`方案导入失败：${error.message}`);
+  }
+}
+
+function applyImportedPlan(plan) {
+  if (!plan || typeof plan !== "object") {
+    throw new Error("方案文件格式不正确。");
+  }
+
+  const validIds = new Set(state.egoItems.map((item) => item.id));
+  const validPackIds = new Set(state.packs.map((pack) => pack.id));
+
+  state.selectedIds = new Set(
+    (Array.isArray(plan.selectedIds) ? plan.selectedIds : []).filter((id) =>
+      validIds.has(id)
+    )
+  );
+
+  const nextManualPackByFloor = {};
+  const sourceManualPacks = plan.manualPackByFloor || {};
+  Object.entries(sourceManualPacks).forEach(([floor, packId]) => {
+    if (!validPackIds.has(packId)) return;
+    nextManualPackByFloor[floor] = packId;
+  });
+  state.manualPackByFloor = nextManualPackByFloor;
+
+  const filters = plan.filters || {};
+  state.searchTerm = String(filters.searchTerm || "").toLowerCase();
+  state.keywordFilter = state.keywordList.includes(filters.keywordFilter)
+    ? filters.keywordFilter
+    : "";
+  state.levelFilter = state.levelList.includes(filters.levelFilter)
+    ? filters.levelFilter
+    : "";
+  state.packTypeFilter = ["", "limited", "all-packs"].includes(filters.packTypeFilter)
+    ? filters.packTypeFilter
+    : "";
+  state.selectedFilter = ["", "selected", "unselected"].includes(filters.selectedFilter)
+    ? filters.selectedFilter
+    : "";
+
+  syncFilterInputs();
+  renderEgoGrid();
+  updateSelectedSummary();
+  calculateRoute();
+}
+
+function syncFilterInputs() {
+  searchInput.value = state.searchTerm;
+  keywordFilterSelect.value = state.keywordFilter;
+  levelFilterSelect.value = state.levelFilter;
+  packTypeFilterSelect.value = state.packTypeFilter;
+  selectedFilterSelect.value = state.selectedFilter;
+}
+
+function updatePlanStatus(message) {
+  planStatus.textContent = message;
 }
 
 function renderKeywordChips() {

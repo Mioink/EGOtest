@@ -38,11 +38,28 @@
     <main class="layout">
       <section class="panel panel--filters">
         <div class="panel__header">
-          <div>
+          <div class="panel__header-copy">
             <p class="panel__eyebrow">检索与批量选择</p>
             <h2>目标 EGO 饰品</h2>
           </div>
-          <button id="clear-selection" class="ghost-button" type="button">清空选择</button>
+          <div class="panel__actions">
+            <button id="export-plan" class="ghost-button" type="button">导出方案</button>
+            <button id="copy-plan" class="ghost-button" type="button">复制方案码</button>
+            <button id="copy-plan-share" class="ghost-button" type="button">复制分享文本</button>
+            <button id="import-plan" class="ghost-button" type="button">导入方案</button>
+            <button id="clear-selection" class="ghost-button" type="button">清空选择</button>
+          </div>
+        </div>
+        <input id="plan-file-input" type="file" accept=".json,application/json" hidden>
+        <div id="plan-status" class="plan-status">可导出当前思路为方案文件，或导入他人分享的方案。</div>
+        <div class="share-code-panel">
+          <label class="share-code-field">
+            <span>方案码</span>
+            <textarea id="plan-code-input" rows="3" placeholder="点击“复制方案码”自动生成，或粘贴别人分享的方案码到这里。"></textarea>
+          </label>
+          <div class="share-code-actions">
+            <button id="apply-plan-code" class="ghost-button" type="button">应用方案码</button>
+          </div>
         </div>
 
         <label class="search">
