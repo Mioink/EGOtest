@@ -31,11 +31,8 @@ const keywordFilterSelect = document.querySelector("#ego-keyword-filter");
 const levelFilterSelect = document.querySelector("#ego-level-filter");
 const packTypeFilterSelect = document.querySelector("#ego-pack-type-filter");
 const selectedFilterSelect = document.querySelector("#ego-selected-filter");
-const exportPlanButton = document.querySelector("#export-plan");
 const copyPlanButton = document.querySelector("#copy-plan");
 const copyPlanShareButton = document.querySelector("#copy-plan-share");
-const importPlanButton = document.querySelector("#import-plan");
-const planFileInput = document.querySelector("#plan-file-input");
 const planStatus = document.querySelector("#plan-status");
 const planCodeInput = document.querySelector("#plan-code-input");
 const applyPlanCodeButton = document.querySelector("#apply-plan-code");
@@ -103,10 +100,6 @@ function bindEvents() {
     renderEgoGrid();
   });
 
-  exportPlanButton.addEventListener("click", () => {
-    exportPlan();
-  });
-
   copyPlanButton.addEventListener("click", async () => {
     await copyPlanToClipboard();
   });
@@ -117,17 +110,6 @@ function bindEvents() {
 
   applyPlanCodeButton.addEventListener("click", async () => {
     await applyPlanCodeFromInput();
-  });
-
-  importPlanButton.addEventListener("click", () => {
-    planFileInput.click();
-  });
-
-  planFileInput.addEventListener("change", async (event) => {
-    const [file] = event.target.files || [];
-    if (!file) return;
-    await importPlan(file);
-    planFileInput.value = "";
   });
 
   clearSelectionButton.addEventListener("click", () => {
@@ -170,23 +152,6 @@ function renderFilterOptions() {
     option.textContent = level;
     levelFilterSelect.appendChild(option);
   });
-}
-
-function exportPlan() {
-  const plan = buildPlanPayload();
-  const blob = new Blob([JSON.stringify(plan, null, 2)], {
-    type: "application/json;charset=utf-8",
-  });
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-  anchor.href = url;
-  anchor.download = `limbus-route-plan-${timestamp}.json`;
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  URL.revokeObjectURL(url);
-  updatePlanStatus(`方案已导出，包含 ${plan.selectedIds.length} 件已选 EGO。`);
 }
 
 function buildPlanPayload() {
@@ -361,17 +326,6 @@ function copyTextWithTextarea(text) {
   textarea.remove();
   if (!copied) {
     throw new Error("浏览器未允许复制到剪贴板。");
-  }
-}
-
-async function importPlan(file) {
-  try {
-    const text = await file.text();
-    const plan = JSON.parse(text);
-    applyImportedPlan(plan);
-    updatePlanStatus(`方案导入成功：已恢复 ${state.selectedIds.size} 件 EGO 与 ${Object.keys(state.manualPackByFloor).length} 层手动卡包。`);
-  } catch (error) {
-    updatePlanStatus(`方案导入失败：${error.message}`);
   }
 }
 
