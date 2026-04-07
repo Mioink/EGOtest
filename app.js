@@ -472,7 +472,7 @@ function renderEgoGrid() {
       item.acquisition,
       item.packDisplay,
       ...(item.keywords || []),
-      ...(item.packOptions || []),
+      ...getItemPackOptionIds(item),
     ]
       .join(" ")
       .toLowerCase();
@@ -609,8 +609,7 @@ function calculateRoute() {
       usedPackIds.add(chosenPack.id);
       if (
         limitedItems.some(
-          (item) =>
-            Array.isArray(item.packOptions) && item.packOptions.includes(chosenPack.id)
+          (item) => itemHasPackOption(item, chosenPack.id)
         )
       ) {
         coveredLimitedPackIds.add(chosenPack.id);
@@ -683,10 +682,7 @@ function chooseBestPackForFloor(
 function scorePack(pack, limitedItems, coveredLimitedPackIds, selectedKeywords) {
   // 权重顺序：未满足的限定需求 > 关键词契合度 > 备注惩罚。
   const unmetLimitedMatches = limitedItems.filter(
-    (item) =>
-      !coveredLimitedPackIds.has(pack.id) &&
-      Array.isArray(item.packOptions) &&
-      item.packOptions.includes(pack.id)
+    (item) => !coveredLimitedPackIds.has(pack.id) && itemHasPackOption(item, pack.id)
   ).length;
   const keywordOverlap = (pack.keywords || []).filter(
     (keyword) => keyword && selectedKeywords.has(keyword)
@@ -730,9 +726,7 @@ function buildRouteDetails(chosenPack, limitedItems, manualPack = null) {
     .map((item) => item.name);
 
   const required = limitedItems.some(
-    (item) =>
-      Array.isArray(item.packOptions) &&
-      item.packOptions.includes(chosenPack.id)
+    (item) => itemHasPackOption(item, chosenPack.id)
   );
 
   const reasonParts = [];
@@ -762,7 +756,7 @@ function buildRouteDetails(chosenPack, limitedItems, manualPack = null) {
 
 function doesPackCoverItem(pack, item) {
   if (item.allPacks) return Boolean(pack);
-  return Array.isArray(item.packOptions) && item.packOptions.includes(pack.id);
+  return itemHasPackOption(item, pack.id);
 }
 
 function updateRouteSummary(selectedItems, routeCards) {
@@ -772,16 +766,14 @@ function updateRouteSummary(selectedItems, routeCards) {
     selectedItems
       .filter((item) => {
         if (item.allPacks) return chosenPackIds.size > 0;
-        return (item.packOptions || []).some((packId) => chosenPackIds.has(packId));
+        return getItemPackOptionIds(item).some((packId) => chosenPackIds.has(packId));
       })
       .map((item) => item.id)
   );
 
   const requiredPackIds = new Set(
     limitedSelectedItems
-      .flatMap((item) =>
-        (item.packOptions || []).filter((packId) => chosenPackIds.has(packId))
-      )
+      .flatMap((item) => getItemPackOptionIds(item).filter((packId) => chosenPackIds.has(packId)))
   );
 
   const manualCount = Object.keys(state.manualPackByFloor).length;
@@ -844,7 +836,7 @@ function isItemCoveredByRoute(item, chosenPackIds) {
   if (item.allPacks) {
     return chosenPackIds.size > 0;
   }
-  return (item.packOptions || []).some((packId) => chosenPackIds.has(packId));
+  return getItemPackOptionIds(item).some((packId) => chosenPackIds.has(packId));
 }
 
 function formatMissingAccess(item, packMap) {
@@ -852,7 +844,7 @@ function formatMissingAccess(item, packMap) {
     return "通用饰品：理论上可由任意已出现卡包获得。";
   }
 
-  const accessList = (item.packOptions || [])
+  const accessList = getItemPackOptionIds(item)
     .map((packId) => packMap.get(packId))
     .filter(Boolean)
     .map((pack) => `第 ${pack.floors.join(" / ")} 层：${pack.name}`);
@@ -862,6 +854,14 @@ function formatMissingAccess(item, packMap) {
   }
 
   return `可获取位置：${accessList.join("；")}`;
+}
+
+function getItemPackOptionIds(item) {
+  return (item.packOptions || []).map((packId) => String(packId));
+}
+
+function itemHasPackOption(item, packId) {
+  return getItemPackOptionIds(item).includes(String(packId));
 }
 
 function renderRouteBoard() {

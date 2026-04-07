@@ -432,7 +432,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9029.png",
     "cost": "191",
     "event": ""
@@ -660,7 +660,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9044.png",
     "cost": "208",
     "event": ""
@@ -676,7 +676,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9045.png",
     "cost": "379",
     "event": ""
@@ -692,7 +692,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9046.png",
     "cost": "197",
     "event": ""
@@ -724,7 +724,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9048.png",
     "cost": "244",
     "event": ""
@@ -756,7 +756,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9050.png",
     "cost": "382",
     "event": ""
@@ -788,7 +788,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9052.png",
     "cost": "190",
     "event": ""
@@ -804,7 +804,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9053.png",
     "cost": "231",
     "event": ""
@@ -836,7 +836,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9055.png",
     "cost": "381",
     "event": ""
@@ -914,7 +914,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9060.png",
     "cost": "384",
     "event": ""
@@ -978,7 +978,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9064.png",
     "cost": "209",
     "event": ""
@@ -994,7 +994,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9065.png",
     "cost": "373",
     "event": ""
@@ -1070,7 +1070,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9070.png",
     "cost": "390",
     "event": ""
@@ -1086,7 +1086,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9071.png",
     "cost": "248",
     "event": ""
@@ -1102,7 +1102,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9072.png",
     "cost": "247",
     "event": ""
@@ -1150,7 +1150,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9075.png",
     "cost": "394",
     "event": ""
@@ -1234,7 +1234,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9081.png",
     "cost": "424",
     "event": ""
@@ -1248,7 +1248,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9082.png",
     "cost": "422",
     "event": ""
@@ -1262,7 +1262,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9083.png",
     "cost": "600",
     "event": ""
@@ -1306,7 +1306,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9086.png",
     "cost": "216",
     "event": ""
@@ -1322,7 +1322,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9087.png",
     "cost": "141",
     "event": ""
@@ -1354,7 +1354,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9089.png",
     "cost": "164",
     "event": ""
@@ -1482,7 +1482,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9097.png",
     "cost": "154",
     "event": ""
@@ -1562,7 +1562,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9102.png",
     "cost": "158",
     "event": ""
@@ -1610,7 +1610,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9105.png",
     "cost": "400",
     "event": ""
@@ -1626,7 +1626,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9106.png",
     "cost": "149",
     "event": ""
@@ -1690,7 +1690,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9110.png",
     "cost": "400",
     "event": ""
@@ -1786,7 +1786,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9116.png",
     "cost": "400",
     "event": ""
@@ -1802,7 +1802,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9117.png",
     "cost": "201",
     "event": ""
@@ -1850,7 +1850,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9120.png",
     "cost": "271",
     "event": ""
@@ -1866,7 +1866,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9121.png",
     "cost": "400",
     "event": ""
@@ -1898,7 +1898,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9123.png",
     "cost": "155",
     "event": ""
@@ -1930,7 +1930,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9125.png",
     "cost": "257",
     "event": ""
@@ -1946,7 +1946,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9126.png",
     "cost": "400",
     "event": ""
@@ -1962,7 +1962,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9127.png",
     "cost": "144",
     "event": ""
@@ -2010,7 +2010,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9130.png",
     "cost": "243",
     "event": ""
@@ -2026,7 +2026,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9131.png",
     "cost": "400",
     "event": ""
@@ -2090,7 +2090,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9135.png",
     "cost": "254",
     "event": ""
@@ -2106,7 +2106,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9136.png",
     "cost": "400",
     "event": ""
@@ -2122,7 +2122,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9137.png",
     "cost": "155",
     "event": ""
@@ -2154,7 +2154,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9139.png",
     "cost": "199",
     "event": ""
@@ -2170,7 +2170,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9140.png",
     "cost": "207",
     "event": ""
@@ -2186,7 +2186,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9141.png",
     "cost": "256",
     "event": ""
@@ -2202,7 +2202,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9142.png",
     "cost": "400",
     "event": ""
@@ -2218,7 +2218,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9143.png",
     "cost": "151",
     "event": ""
@@ -2234,7 +2234,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9144.png",
     "cost": "213",
     "event": ""
@@ -2266,7 +2266,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9146.png",
     "cost": "245",
     "event": ""
@@ -2282,7 +2282,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9147.png",
     "cost": "400",
     "event": ""
@@ -2298,7 +2298,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9148.png",
     "cost": "152",
     "event": ""
@@ -2314,7 +2314,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9149.png",
     "cost": "209",
     "event": ""
@@ -2346,7 +2346,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9151.png",
     "cost": "258",
     "event": ""
@@ -2362,7 +2362,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9152.png",
     "cost": "400",
     "event": ""
@@ -2376,7 +2376,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9153.png",
     "cost": "181",
     "event": ""
@@ -2390,7 +2390,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9154.png",
     "cost": "242",
     "event": ""
@@ -2566,7 +2566,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9165.png",
     "cost": "207",
     "event": ""
@@ -2790,7 +2790,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9179.png",
     "cost": "261",
     "event": ""
@@ -2806,7 +2806,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9180.png",
     "cost": "402",
     "event": ""
@@ -2884,7 +2884,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9185.png",
     "cost": "200",
     "event": ""
@@ -2898,7 +2898,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9186.png",
     "cost": "200",
     "event": ""
@@ -2912,7 +2912,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9187.png",
     "cost": "200",
     "event": ""
@@ -2926,7 +2926,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9188.png",
     "cost": "250",
     "event": ""
@@ -2940,7 +2940,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9189.png",
     "cost": "250",
     "event": ""
@@ -2954,7 +2954,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9190.png",
     "cost": "250",
     "event": ""
@@ -2968,7 +2968,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9191.png",
     "cost": "250",
     "event": ""
@@ -3000,7 +3000,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9193.png",
     "cost": "148",
     "event": ""
@@ -3016,7 +3016,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9194.png",
     "cost": "207",
     "event": ""
@@ -3032,7 +3032,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9195.png",
     "cost": "264",
     "event": ""
@@ -3048,7 +3048,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9196.png",
     "cost": "420",
     "event": ""
@@ -3064,7 +3064,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9197.png",
     "cost": "148",
     "event": ""
@@ -3080,7 +3080,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9198.png",
     "cost": "203",
     "event": ""
@@ -3096,7 +3096,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9199.png",
     "cost": "251",
     "event": ""
@@ -3112,7 +3112,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9200.png",
     "cost": "407",
     "event": ""
@@ -3128,7 +3128,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9201.png",
     "cost": "148",
     "event": ""
@@ -3144,7 +3144,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9202.png",
     "cost": "201",
     "event": ""
@@ -3160,7 +3160,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9203.png",
     "cost": "250",
     "event": ""
@@ -3176,7 +3176,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9204.png",
     "cost": "416",
     "event": ""
@@ -3192,7 +3192,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9205.png",
     "cost": "199",
     "event": ""
@@ -3208,7 +3208,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9206.png",
     "cost": "251",
     "event": ""
@@ -3236,7 +3236,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9208.png",
     "cost": "396",
     "event": ""
@@ -3250,7 +3250,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9209.png",
     "cost": "400",
     "event": ""
@@ -3266,7 +3266,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9210.png",
     "cost": "155",
     "event": ""
@@ -3279,9 +3279,9 @@
     "keywords": [
       "沉沦"
     ],
-    "packDisplay": "所有卡包",
-    "packOptions": [],
-    "allPacks": true,
+    "packDisplay": "沉溺的忧郁、沉沦泛滥",
+    "packOptions": [71,88],
+    "allPacks": false,
     "acquisition": "沉溺的忧郁、沉沦泛滥",
     "icon": "./assets/ego/9211.png",
     "cost": "404",
@@ -3330,7 +3330,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9214.png",
     "cost": "248",
     "event": ""
@@ -3346,7 +3346,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9215.png",
     "cost": "250",
     "event": ""
@@ -3430,7 +3430,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9220.png",
     "cost": "247",
     "event": ""
@@ -3446,7 +3446,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9221.png",
     "cost": "247",
     "event": ""
@@ -3560,7 +3560,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9228.png",
     "cost": "250",
     "event": ""
@@ -3588,7 +3588,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9230.png",
     "cost": "250",
     "event": ""
@@ -3616,7 +3616,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9232.png",
     "cost": "250",
     "event": ""
@@ -6079,7 +6079,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9799.png",
     "cost": "999",
     "event": ""
@@ -6369,7 +6369,7 @@
     "packDisplay": "所有卡包",
     "packOptions": [],
     "allPacks": true,
-    "acquisition": "数据导入",
+    "acquisition": "",
     "icon": "./assets/ego/9817.png",
     "cost": "246",
     "event": ""
