@@ -8,9 +8,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-红焰蛾",
         "icon": "./assets/ego/9001.png",
@@ -26,9 +24,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-轻蔑螺旋",
         "icon": "./assets/ego/9002.png",
@@ -44,9 +40,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-尘归尘",
         "icon": "./assets/ego/9003.png",
@@ -62,9 +56,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-输血袋",
         "icon": "./assets/ego/9004.png",
@@ -80,9 +72,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-嗜伤甲虫",
         "icon": "./assets/ego/9005.png",
@@ -98,9 +88,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-咖啡与纸鹤",
         "icon": "./assets/ego/9006.png",
@@ -116,9 +104,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-朱红蛾群",
         "icon": "./assets/ego/9007.png",
@@ -134,9 +120,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-痛苦泰迪",
         "icon": "./assets/ego/9008.png",
@@ -152,9 +136,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-人皮预言者",
         "icon": "./assets/ego/9009.png",
@@ -170,9 +152,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-无我入定",
         "icon": "./assets/ego/9010.png",
@@ -188,9 +168,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-流浪狐狸",
         "icon": "./assets/ego/9011.png",
@@ -206,9 +184,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-此刻的神色",
         "icon": "./assets/ego/9012.png",
@@ -224,9 +200,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-因而无人哭泣",
         "icon": "./assets/ego/9013.png",
@@ -242,9 +216,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-黄铜公牛 - 流泪",
         "icon": "./assets/ego/9014.png",
@@ -260,9 +232,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-膏血",
         "icon": "./assets/ego/9015.png",
@@ -278,9 +248,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-绅士精灵",
         "icon": "./assets/ego/9016.png",
@@ -296,9 +264,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-石版字符",
         "icon": "./assets/ego/9017.png",
@@ -314,9 +280,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-玫瑰告示牌",
         "icon": "./assets/ego/9018.png",
@@ -332,9 +296,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-陆行珍珠",
         "icon": "./assets/ego/9019.png",
@@ -350,9 +312,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-浸染棉花",
         "icon": "./assets/ego/9020.png",
@@ -368,9 +328,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-迷失的乘客",
         "icon": "./assets/ego/9021.png",
@@ -386,9 +344,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-幻痛",
         "icon": "./assets/ego/9022.png",
@@ -404,9 +360,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-雷霆树枝",
         "icon": "./assets/ego/9023.png",
@@ -422,9 +376,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-悲泣蟾蜍",
         "icon": "./assets/ego/9024.png",
@@ -440,9 +392,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-灰色大衣",
         "icon": "./assets/ego/9025.png",
@@ -458,9 +408,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-刺青：大器晚成",
         "icon": "./assets/ego/9026.png",
@@ -476,9 +424,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-谷底之星",
         "icon": "./assets/ego/9027.png",
@@ -494,9 +440,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-偏见",
         "icon": "./assets/ego/9028.png",
@@ -512,9 +456,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9029.png",
@@ -530,9 +472,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-头骨收藏",
         "icon": "./assets/ego/9030.png",
@@ -548,9 +488,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-蒸汽运输机",
         "icon": "./assets/ego/9031.png",
@@ -566,9 +504,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-梦中的电子羊",
         "icon": "./assets/ego/9032.png",
@@ -584,9 +520,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-电击蜈蚣",
         "icon": "./assets/ego/9033.png",
@@ -602,9 +536,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-Kqe-1j-23",
         "icon": "./assets/ego/9034.png",
@@ -620,9 +552,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-巫毒娃娃",
         "icon": "./assets/ego/9035.png",
@@ -638,9 +568,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-四百朵玫瑰",
         "icon": "./assets/ego/9036.png",
@@ -656,9 +584,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-瓶中婴孩",
         "icon": "./assets/ego/9037.png",
@@ -674,9 +600,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-异想狩猎",
         "icon": "./assets/ego/9038.png",
@@ -692,9 +616,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-归乡路途",
         "icon": "./assets/ego/9039.png",
@@ -710,9 +632,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-明日的运势",
         "icon": "./assets/ego/9040.png",
@@ -728,9 +648,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-百足使徒",
         "icon": "./assets/ego/9041.png",
@@ -746,9 +664,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-烟霾与铁丝网",
         "icon": "./assets/ego/9042.png",
@@ -764,9 +680,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-员工证",
         "icon": "./assets/ego/9043.png",
@@ -782,9 +696,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9044.png",
@@ -800,9 +712,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9045.png",
@@ -818,9 +728,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9046.png",
@@ -836,9 +744,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-玫瑰猎人",
         "icon": "./assets/ego/9047.png",
@@ -854,9 +760,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9048.png",
@@ -872,9 +776,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-荆棘之路",
         "icon": "./assets/ego/9049.png",
@@ -890,9 +792,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9050.png",
@@ -908,9 +808,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-石冢",
         "icon": "./assets/ego/9051.png",
@@ -926,9 +824,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9052.png",
@@ -944,9 +840,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9053.png",
@@ -962,9 +856,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-融化的时钟发条",
         "icon": "./assets/ego/9054.png",
@@ -980,9 +872,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9055.png",
@@ -998,9 +888,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-长腿精灵",
         "icon": "./assets/ego/9056.png",
@@ -1016,9 +904,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-夜视镜",
         "icon": "./assets/ego/9057.png",
@@ -1034,9 +920,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-星象盘碎片",
         "icon": "./assets/ego/9058.png",
@@ -1052,9 +936,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-精灵提灯",
         "icon": "./assets/ego/9059.png",
@@ -1070,9 +952,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9060.png",
@@ -1088,9 +968,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-遗骸碎片",
         "icon": "./assets/ego/9061.png",
@@ -1106,9 +984,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-简历",
         "icon": "./assets/ego/9062.png",
@@ -1124,9 +1000,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-凶弹射手",
         "icon": "./assets/ego/9063.png",
@@ -1142,9 +1016,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9064.png",
@@ -1160,9 +1032,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9065.png",
@@ -1178,9 +1048,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-往昔的睡袋",
         "icon": "./assets/ego/9066.png",
@@ -1196,9 +1064,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-特别合约",
         "icon": "./assets/ego/9067.png",
@@ -1214,9 +1080,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-受缚之王",
         "icon": "./assets/ego/9068.png",
@@ -1232,9 +1096,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-护腕",
         "icon": "./assets/ego/9069.png",
@@ -1250,9 +1112,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9070.png",
@@ -1268,9 +1128,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9071.png",
@@ -1286,9 +1144,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9072.png",
@@ -1304,9 +1160,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-噬梦的浊流",
         "icon": "./assets/ego/9073.png",
@@ -1322,9 +1176,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-某日的肖像",
         "icon": "./assets/ego/9074.png",
@@ -1340,9 +1192,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9075.png",
@@ -1358,9 +1208,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-便携式急救包",
         "icon": "./assets/ego/9076.png",
@@ -1376,9 +1224,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-止痛片",
         "icon": "./assets/ego/9077.png",
@@ -1394,9 +1240,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-贪婪之锤",
         "icon": "./assets/ego/9078.png",
@@ -1412,9 +1256,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-金瓮",
         "icon": "./assets/ego/9079.png",
@@ -1430,9 +1272,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-生存的里程标",
         "icon": "./assets/ego/9080.png",
@@ -1448,9 +1288,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9081.png",
@@ -1466,9 +1304,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9082.png",
@@ -1484,9 +1320,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9083.png",
@@ -1502,9 +1336,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-古代遗像",
         "icon": "./assets/ego/9084.png",
@@ -1520,9 +1352,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-保密协议",
         "icon": "./assets/ego/9085.png",
@@ -1538,9 +1368,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9086.png",
@@ -1556,9 +1384,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9087.png",
@@ -1574,9 +1400,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9088.png",
@@ -1592,9 +1416,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9089.png",
@@ -1610,9 +1432,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9090.png",
@@ -1628,9 +1448,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-发条装置时间不倒翁",
         "icon": "./assets/ego/9091.png",
@@ -1646,9 +1464,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9092.png",
@@ -1664,9 +1480,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-噬梦的浊流",
         "icon": "./assets/ego/9093.png",
@@ -1682,9 +1496,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9094.png",
@@ -1700,9 +1512,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-破碎罗盘",
         "icon": "./assets/ego/9095.png",
@@ -1718,9 +1528,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9096.png",
@@ -1736,9 +1544,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9097.png",
@@ -1754,9 +1560,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9098.png",
@@ -1772,9 +1576,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-物理屏蔽力场",
         "icon": "./assets/ego/9099.png",
@@ -1790,9 +1592,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9100.png",
@@ -1808,9 +1608,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-人皮预言者",
         "icon": "./assets/ego/9101.png",
@@ -1826,9 +1624,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9102.png",
@@ -1844,9 +1640,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-黄铜公牛 - 流泪",
         "icon": "./assets/ego/9103.png",
@@ -1862,9 +1656,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-红焰蛾",
         "icon": "./assets/ego/9104.png",
@@ -1880,9 +1672,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9105.png",
@@ -1898,9 +1688,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9106.png",
@@ -1916,9 +1704,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-浸染棉花",
         "icon": "./assets/ego/9107.png",
@@ -1934,9 +1720,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-轻蔑螺旋",
         "icon": "./assets/ego/9108.png",
@@ -1952,9 +1736,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-玫瑰告示牌",
         "icon": "./assets/ego/9109.png",
@@ -1970,9 +1752,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9110.png",
@@ -1988,9 +1768,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-陆行珍珠",
         "icon": "./assets/ego/9111.png",
@@ -2006,9 +1784,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-悲泣蟾蜍",
         "icon": "./assets/ego/9112.png",
@@ -2024,9 +1800,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-绅士精灵",
         "icon": "./assets/ego/9113.png",
@@ -2042,9 +1816,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-幻痛",
         "icon": "./assets/ego/9114.png",
@@ -2060,9 +1832,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-蒸汽运输机",
         "icon": "./assets/ego/9115.png",
@@ -2078,9 +1848,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9116.png",
@@ -2096,9 +1864,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9117.png",
@@ -2114,9 +1880,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-头骨收藏",
         "icon": "./assets/ego/9118.png",
@@ -2132,9 +1896,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-流浪狐狸",
         "icon": "./assets/ego/9119.png",
@@ -2150,9 +1912,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9120.png",
@@ -2168,9 +1928,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9121.png",
@@ -2186,9 +1944,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-精灵提灯",
         "icon": "./assets/ego/9122.png",
@@ -2204,9 +1960,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9123.png",
@@ -2222,9 +1976,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-无我入定",
         "icon": "./assets/ego/9124.png",
@@ -2240,9 +1992,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9125.png",
@@ -2258,9 +2008,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9126.png",
@@ -2276,9 +2024,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9127.png",
@@ -2294,9 +2040,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-长腿精灵",
         "icon": "./assets/ego/9128.png",
@@ -2312,9 +2056,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-因而无人哭泣",
         "icon": "./assets/ego/9129.png",
@@ -2330,9 +2072,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9130.png",
@@ -2348,9 +2088,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9131.png",
@@ -2366,9 +2104,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-Kqe-1j-23",
         "icon": "./assets/ego/9132.png",
@@ -2384,9 +2120,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-电击蜈蚣",
         "icon": "./assets/ego/9133.png",
@@ -2402,9 +2136,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-迷失的乘客",
         "icon": "./assets/ego/9134.png",
@@ -2420,9 +2152,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9135.png",
@@ -2438,9 +2168,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9136.png",
@@ -2456,9 +2184,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9137.png",
@@ -2474,9 +2200,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-古代遗像",
         "icon": "./assets/ego/9138.png",
@@ -2492,9 +2216,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9139.png",
@@ -2510,9 +2232,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9140.png",
@@ -2528,9 +2248,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9141.png",
@@ -2546,9 +2264,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9142.png",
@@ -2564,9 +2280,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9143.png",
@@ -2582,9 +2296,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9144.png",
@@ -2600,9 +2312,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-凶弹射手",
         "icon": "./assets/ego/9145.png",
@@ -2618,9 +2328,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9146.png",
@@ -2636,9 +2344,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9147.png",
@@ -2654,9 +2360,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9148.png",
@@ -2672,9 +2376,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9149.png",
@@ -2690,9 +2392,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-保密协议",
         "icon": "./assets/ego/9150.png",
@@ -2708,9 +2408,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9151.png",
@@ -2726,9 +2424,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9152.png",
@@ -2744,9 +2440,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9153.png",
@@ -2762,9 +2456,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9154.png",
@@ -2780,9 +2472,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-冠汤翼蜥",
         "icon": "./assets/ego/9155.png",
@@ -2798,9 +2488,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9156.png",
@@ -2816,9 +2504,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9157.png",
@@ -2834,9 +2520,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9158.png",
@@ -2852,9 +2536,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-四百朵玫瑰",
         "icon": "./assets/ego/9159.png",
@@ -2870,9 +2552,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9160.png",
@@ -2888,9 +2568,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9161.png",
@@ -2906,9 +2584,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9162.png",
@@ -2924,9 +2600,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9163.png",
@@ -2942,9 +2616,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9164.png",
@@ -2960,9 +2632,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9165.png",
@@ -2978,9 +2648,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9166.png",
@@ -2996,9 +2664,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9167.png",
@@ -3014,9 +2680,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9168.png",
@@ -3032,9 +2696,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-玫瑰猎人",
         "icon": "./assets/ego/9169.png",
@@ -3050,9 +2712,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9170.png",
@@ -3068,9 +2728,7 @@ window.EGO_ITEMS = [
             "破裂"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9171.png",
@@ -3086,9 +2744,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-简历",
         "icon": "./assets/ego/9172.png",
@@ -3104,9 +2760,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9173.png",
@@ -3122,9 +2776,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-遗骸碎片",
         "icon": "./assets/ego/9174.png",
@@ -3140,9 +2792,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9175.png",
@@ -3158,9 +2808,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9176.png",
@@ -3176,9 +2824,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-某日的肖像",
         "icon": "./assets/ego/9177.png",
@@ -3194,9 +2840,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-膏血",
         "icon": "./assets/ego/9178.png",
@@ -3212,9 +2856,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9179.png",
@@ -3230,9 +2872,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9180.png",
@@ -3248,9 +2888,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难",
         "icon": "./assets/ego/9181.png",
@@ -3266,9 +2904,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-你变强了吗",
         "icon": "./assets/ego/9182.png",
@@ -3284,9 +2920,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9183.png",
@@ -3302,9 +2936,7 @@ window.EGO_ITEMS = [
             "充能"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9184.png",
@@ -3320,9 +2952,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9185.png",
@@ -3338,9 +2968,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9186.png",
@@ -3356,9 +2984,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9187.png",
@@ -3374,9 +3000,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9188.png",
@@ -3392,9 +3016,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9189.png",
@@ -3410,9 +3032,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9190.png",
@@ -3428,9 +3048,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9191.png",
@@ -3446,9 +3064,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-痛苦泰迪",
         "icon": "./assets/ego/9192.png",
@@ -3464,9 +3080,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9193.png",
@@ -3482,9 +3096,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9194.png",
@@ -3500,9 +3112,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9195.png",
@@ -3518,9 +3128,7 @@ window.EGO_ITEMS = [
             "斩击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9196.png",
@@ -3536,9 +3144,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9197.png",
@@ -3554,9 +3160,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9198.png",
@@ -3572,9 +3176,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9199.png",
@@ -3590,9 +3192,7 @@ window.EGO_ITEMS = [
             "突刺"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9200.png",
@@ -3608,9 +3208,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9201.png",
@@ -3626,9 +3224,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9202.png",
@@ -3644,9 +3240,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9203.png",
@@ -3662,9 +3256,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9204.png",
@@ -3680,9 +3272,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9205.png",
@@ -3698,9 +3288,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9206.png",
@@ -3716,9 +3304,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-循环往复的信念与承诺",
         "icon": "./assets/ego/9207.png",
@@ -3734,9 +3320,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9208.png",
@@ -3752,9 +3336,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9209.png",
@@ -3770,9 +3352,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9210.png",
@@ -3807,9 +3387,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9212.png",
@@ -3825,9 +3403,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9213.png",
@@ -3843,9 +3419,7 @@ window.EGO_ITEMS = [
             "震颤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9214.png",
@@ -3861,9 +3435,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9215.png",
@@ -3879,9 +3451,7 @@ window.EGO_ITEMS = [
             "烧伤"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9216.png",
@@ -3951,9 +3521,7 @@ window.EGO_ITEMS = [
             "打击"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9220.png",
@@ -3969,9 +3537,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9221.png",
@@ -4023,9 +3589,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9224.png",
@@ -4077,9 +3641,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-舍吾皮肉",
         "icon": "./assets/ego/9227.png",
@@ -4095,9 +3657,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9228.png",
@@ -4113,9 +3673,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-T公司 时间预付机",
         "icon": "./assets/ego/9229.png",
@@ -4131,9 +3689,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9230.png",
@@ -4149,9 +3705,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-那一日的语音记录",
         "icon": "./assets/ego/9231.png",
@@ -4167,9 +3721,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9232.png",
@@ -4436,9 +3988,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "困难合成",
         "icon": "./assets/ego/9249.png",
@@ -4544,9 +4094,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9410.png",
@@ -4616,9 +4164,7 @@ window.EGO_ITEMS = [
             "流血"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9416.png",
@@ -4760,9 +4306,7 @@ window.EGO_ITEMS = [
             "呼吸法"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "合成",
         "icon": "./assets/ego/9430.png",
@@ -5101,12 +4645,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
-        "acquisition": "20区的奇迹",
+        "acquisition": "20区的奇迹，20区的奇迹复刻",
         "icon": "./assets/ego/9709.png",
         "cost": "150",
         "event": ""
@@ -5119,9 +4663,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
         "acquisition": "20区的奇迹",
@@ -5137,12 +4681,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
-        "acquisition": "20区的奇迹",
+        "acquisition": "20区的奇迹，20区的奇迹复刻",
         "icon": "./assets/ego/9711.png",
         "cost": "250",
         "event": ""
@@ -5155,12 +4699,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2027.png",
         "cost": "195",
         "event": "事件-黑色账簿"
@@ -5173,12 +4717,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2028.png",
         "cost": "205",
         "event": "事件-生锈的刀柄"
@@ -5191,12 +4735,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "流血"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2029.png",
         "cost": "244",
         "event": "事件-破碎的刀刃，折断的刀刃"
@@ -5209,12 +4753,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2030.png",
         "cost": "244",
         "event": "事件-破碎的刀刃，折断的刀刃"
@@ -5227,12 +4771,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2031.png",
         "cost": "253",
         "event": "事件-红色流苏"
@@ -5245,9 +4789,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
         "acquisition": "肉斩骨断合成",
@@ -5263,9 +4807,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
         "acquisition": "肉斩骨断合成",
@@ -5281,12 +4825,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2034.png",
         "cost": "432",
         "event": "事件-竹笠，长袍"
@@ -5299,12 +4843,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2035.png",
         "cost": "432",
         "event": "事件-竹笠，长袍"
@@ -5317,12 +4861,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2036.png",
         "cost": "196",
         "event": "事件-工厂的工人"
@@ -5335,12 +4879,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2037.png",
         "cost": "205",
         "event": "事件-工厂的工人"
@@ -5353,12 +4897,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2038.png",
         "cost": "198",
         "event": "事件-T公司税金征收"
@@ -5371,12 +4915,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2039.png",
         "cost": "202",
         "event": "事件-T公司的街道"
@@ -5389,12 +4933,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2040.png",
         "cost": "207",
         "event": "事件-T公司的街道"
@@ -5407,12 +4951,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2041.png",
         "cost": "245",
         "event": "事件-圣愚的藏身处"
@@ -5425,12 +4969,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2042.png",
         "cost": "250",
         "event": "事件-时间杀人现场"
@@ -5443,9 +4987,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5461,9 +5005,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5479,9 +5023,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5497,9 +5041,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5515,12 +5059,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9732.png",
         "cost": "151",
         "event": "事件-经济舱折扣券"
@@ -5533,12 +5077,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9733.png",
         "cost": "195",
         "event": "事件-罐装冰淇淋"
@@ -5551,12 +5095,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9734.png",
         "cost": "250",
         "event": "事件-E型次元短剑"
@@ -5569,12 +5113,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9735.png",
         "cost": "250",
         "event": "事件-E式次元短剑"
@@ -5587,12 +5131,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9736.png",
         "cost": "203",
         "event": "事件-生物发电型电池"
@@ -5605,12 +5149,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9737.png",
         "cost": "197",
         "event": "事件-生物发电型电池"
@@ -5623,12 +5167,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9738.png",
         "cost": "207",
         "event": "事件-义体关节伺服电机"
@@ -5641,12 +5185,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "流血"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9739.png",
         "cost": "195",
         "event": "事件-义体关节伺服电机"
@@ -5659,9 +5203,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5677,9 +5221,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5695,9 +5239,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5713,9 +5257,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -6237,12 +5781,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9772.png",
         "cost": "151",
         "event": "事件-霍恩海姆心象迷宫的起点"
@@ -6255,12 +5799,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9773.png",
         "cost": "149",
         "event": "事件-霍恩海姆心象迷宫的起点"
@@ -6273,12 +5817,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9774.png",
         "cost": "248",
         "event": "事件-我们就是样本"
@@ -6291,12 +5835,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9775.png",
         "cost": "254",
         "event": "事件-尝尝看"
@@ -6309,12 +5853,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9776.png",
         "cost": "257",
         "event": "事件-炼狱炎蝶之梦"
@@ -6327,12 +5871,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9777.png",
         "cost": "244",
         "event": "事件-仲冬夜之噩梦"
@@ -6345,12 +5889,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9778.png",
         "cost": "252",
         "event": "事件-同意调查"
@@ -6363,12 +5907,12 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9779.png",
         "cost": "252",
         "event": "事件-仔细地观察周围"
@@ -6381,9 +5925,9 @@ window.EGO_ITEMS = [
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
         "acquisition": "LCB定期体检合成",
@@ -6724,9 +6268,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9799.png",
@@ -6742,9 +6284,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "事件-奇怪的机器",
         "icon": "./assets/ego/9800.png",
@@ -7030,9 +6570,7 @@ window.EGO_ITEMS = [
             "沉沦"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "",
         "icon": "./assets/ego/9817.png",
@@ -7282,9 +6820,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "重复获得同一件饰品",
         "icon": "./assets/ego/9991.png",
@@ -7300,9 +6836,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "重复获得同一件饰品",
         "icon": "./assets/ego/9992.png",
@@ -7318,9 +6852,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "重复获得同一件饰品",
         "icon": "./assets/ego/9993.png",
@@ -7336,9 +6868,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "重复获得同一件饰品",
         "icon": "./assets/ego/9994.png",
@@ -7354,9 +6884,7 @@ window.EGO_ITEMS = [
             "泛用"
         ],
         "packDisplay": "所有卡包",
-        "packOptions": [
-
-        ],
+        "packOptions": [],
         "allPacks": true,
         "acquisition": "重复获得同一件饰品",
         "icon": "./assets/ego/9995.png",

@@ -4645,12 +4645,12 @@
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
-        "acquisition": "20区的奇迹",
+        "acquisition": "20区的奇迹，20区的奇迹复刻",
         "icon": "./assets/ego/9709.png",
         "cost": "150",
         "event": ""
@@ -4663,9 +4663,9 @@
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
         "acquisition": "20区的奇迹",
@@ -4681,12 +4681,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "20区的奇迹",
+        "packDisplay": "20区的奇迹，20区的奇迹复刻",
         "packOptions": [
-            "30"
+            30,40
         ],
         "allPacks": false,
-        "acquisition": "20区的奇迹",
+        "acquisition": "20区的奇迹，20区的奇迹复刻",
         "icon": "./assets/ego/9711.png",
         "cost": "250",
         "event": ""
@@ -4699,12 +4699,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2027.png",
         "cost": "195",
         "event": "事件-黑色账簿"
@@ -4717,12 +4717,12 @@
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2028.png",
         "cost": "205",
         "event": "事件-生锈的刀柄"
@@ -4735,12 +4735,12 @@
         "keywords": [
             "流血"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2029.png",
         "cost": "244",
         "event": "事件-破碎的刀刃，折断的刀刃"
@@ -4753,12 +4753,12 @@
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2030.png",
         "cost": "244",
         "event": "事件-破碎的刀刃，折断的刀刃"
@@ -4771,12 +4771,12 @@
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2031.png",
         "cost": "253",
         "event": "事件-红色流苏"
@@ -4789,9 +4789,9 @@
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
         "acquisition": "肉斩骨断合成",
@@ -4807,9 +4807,9 @@
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
         "acquisition": "肉斩骨断合成",
@@ -4825,12 +4825,12 @@
         "keywords": [
             "呼吸法"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2034.png",
         "cost": "432",
         "event": "事件-竹笠，长袍"
@@ -4843,12 +4843,12 @@
         "keywords": [
             "斩击"
         ],
-        "packDisplay": "肉斩骨断",
+        "packDisplay": "肉斩骨断,肉斩骨断复刻",
         "packOptions": [
-            "31"
+            31,43
         ],
         "allPacks": false,
-        "acquisition": "肉斩骨断",
+        "acquisition": "肉斩骨断,肉斩骨断复刻",
         "icon": "./assets/ego/2035.png",
         "cost": "432",
         "event": "事件-竹笠，长袍"
@@ -4861,12 +4861,12 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2036.png",
         "cost": "196",
         "event": "事件-工厂的工人"
@@ -4879,12 +4879,12 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2037.png",
         "cost": "205",
         "event": "事件-工厂的工人"
@@ -4897,12 +4897,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2038.png",
         "cost": "198",
         "event": "事件-T公司税金征收"
@@ -4915,12 +4915,12 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2039.png",
         "cost": "202",
         "event": "事件-T公司的街道"
@@ -4933,12 +4933,12 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2040.png",
         "cost": "207",
         "event": "事件-T公司的街道"
@@ -4951,12 +4951,12 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2041.png",
         "cost": "245",
         "event": "事件-圣愚的藏身处"
@@ -4969,12 +4969,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
-        "acquisition": "时间杀人时间",
+        "acquisition": "时间杀人时间,时间杀人时间复刻",
         "icon": "./assets/ego/2042.png",
         "cost": "250",
         "event": "事件-时间杀人现场"
@@ -4987,9 +4987,9 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5005,9 +5005,9 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5023,9 +5023,9 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5041,9 +5041,9 @@
         "keywords": [
             "震颤"
         ],
-        "packDisplay": "时间杀人时间",
+        "packDisplay": "时间杀人时间,时间杀人时间复刻",
         "packOptions": [
-            "32"
+            32,47
         ],
         "allPacks": false,
         "acquisition": "时间杀人时间合成",
@@ -5059,12 +5059,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9732.png",
         "cost": "151",
         "event": "事件-经济舱折扣券"
@@ -5077,12 +5077,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9733.png",
         "cost": "195",
         "event": "事件-罐装冰淇淋"
@@ -5095,12 +5095,12 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9734.png",
         "cost": "250",
         "event": "事件-E型次元短剑"
@@ -5113,12 +5113,12 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9735.png",
         "cost": "250",
         "event": "事件-E式次元短剑"
@@ -5131,12 +5131,12 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9736.png",
         "cost": "203",
         "event": "事件-生物发电型电池"
@@ -5149,12 +5149,12 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9737.png",
         "cost": "197",
         "event": "事件-生物发电型电池"
@@ -5167,12 +5167,12 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9738.png",
         "cost": "207",
         "event": "事件-义体关节伺服电机"
@@ -5185,12 +5185,12 @@
         "keywords": [
             "流血"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
-        "acquisition": "WARP快车谋杀案",
+        "acquisition": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "icon": "./assets/ego/9739.png",
         "cost": "195",
         "event": "事件-义体关节伺服电机"
@@ -5203,9 +5203,9 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5221,9 +5221,9 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5239,9 +5239,9 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5257,9 +5257,9 @@
         "keywords": [
             "充能"
         ],
-        "packDisplay": "WARP快车谋杀案",
+        "packDisplay": "WARP快车谋杀案,WARP快车谋杀案复刻",
         "packOptions": [
-            "33"
+            33,49
         ],
         "allPacks": false,
         "acquisition": "WARP快车谋杀案合成",
@@ -5781,12 +5781,12 @@
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9772.png",
         "cost": "151",
         "event": "事件-霍恩海姆心象迷宫的起点"
@@ -5799,12 +5799,12 @@
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9773.png",
         "cost": "149",
         "event": "事件-霍恩海姆心象迷宫的起点"
@@ -5817,12 +5817,12 @@
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9774.png",
         "cost": "248",
         "event": "事件-我们就是样本"
@@ -5835,12 +5835,12 @@
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9775.png",
         "cost": "254",
         "event": "事件-尝尝看"
@@ -5853,12 +5853,12 @@
         "keywords": [
             "烧伤"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9776.png",
         "cost": "257",
         "event": "事件-炼狱炎蝶之梦"
@@ -5871,12 +5871,12 @@
         "keywords": [
             "破裂"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9777.png",
         "cost": "244",
         "event": "事件-仲冬夜之噩梦"
@@ -5889,12 +5889,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9778.png",
         "cost": "252",
         "event": "事件-同意调查"
@@ -5907,12 +5907,12 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
-        "acquisition": "LCB定期体检",
+        "acquisition": "LCB定期体检,LCB定期体检复刻",
         "icon": "./assets/ego/9779.png",
         "cost": "252",
         "event": "事件-仔细地观察周围"
@@ -5925,9 +5925,9 @@
         "keywords": [
             "泛用"
         ],
-        "packDisplay": "LCB定期体检",
+        "packDisplay": "LCB定期体检,LCB定期体检复刻",
         "packOptions": [
-            "42"
+            42,51
         ],
         "allPacks": false,
         "acquisition": "LCB定期体检合成",
