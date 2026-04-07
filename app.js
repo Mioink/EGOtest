@@ -579,7 +579,7 @@ function calculateRoute() {
     selectedItems.flatMap((item) => (item.keywords || []).filter(Boolean))
   );
   const limitedItems = selectedItems.filter((item) => !item.allPacks);
-  const coveredLimitedPackIds = new Set();
+  const coveredLimitedItemIds = new Set();
   const usedPackIds = new Set();
   const routeCards = [];
   const lockedPackByFloor = buildLockedPackByFloor();
@@ -601,19 +601,15 @@ function calculateRoute() {
       chooseBestPackForFloor(
         availablePacks,
         limitedItems,
-        coveredLimitedPackIds,
+        coveredLimitedItemIds,
         selectedKeywords
       );
 
     if (chosenPack) {
       usedPackIds.add(chosenPack.id);
-      if (
-        limitedItems.some(
-          (item) => itemHasPackOption(item, chosenPack.id)
-        )
-      ) {
-        coveredLimitedPackIds.add(chosenPack.id);
-      }
+      limitedItems
+        .filter((item) => itemHasPackOption(item, chosenPack.id))
+        .forEach((item) => coveredLimitedItemIds.add(item.id));
     }
 
     routeCards.push({
@@ -665,7 +661,7 @@ function getReservedLockedPackIdsAfterFloor(lockedPackByFloor, currentFloor) {
 function chooseBestPackForFloor(
   availablePacks,
   limitedItems,
-  coveredLimitedPackIds,
+  coveredLimitedItemIds,
   selectedKeywords
 ) {
   if (!availablePacks.length) return null;
@@ -673,16 +669,16 @@ function chooseBestPackForFloor(
   // 自动推荐只在“当前楼层仍可选的卡包”之间比较，不做跨楼层回溯。
   return [...availablePacks].sort((a, b) => {
     return (
-      scorePack(b, limitedItems, coveredLimitedPackIds, selectedKeywords) -
-      scorePack(a, limitedItems, coveredLimitedPackIds, selectedKeywords)
+      scorePack(b, limitedItems, coveredLimitedItemIds, selectedKeywords) -
+      scorePack(a, limitedItems, coveredLimitedItemIds, selectedKeywords)
     );
   })[0];
 }
 
-function scorePack(pack, limitedItems, coveredLimitedPackIds, selectedKeywords) {
+function scorePack(pack, limitedItems, coveredLimitedItemIds, selectedKeywords) {
   // 权重顺序：未满足的限定需求 > 关键词契合度 > 备注惩罚。
   const unmetLimitedMatches = limitedItems.filter(
-    (item) => !coveredLimitedPackIds.has(pack.id) && itemHasPackOption(item, pack.id)
+    (item) => !coveredLimitedItemIds.has(item.id) && itemHasPackOption(item, pack.id)
   ).length;
   const keywordOverlap = (pack.keywords || []).filter(
     (keyword) => keyword && selectedKeywords.has(keyword)
