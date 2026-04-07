@@ -27,6 +27,8 @@ const routeBoard = document.querySelector("#route-board");
 const routeSummary = document.querySelector("#route-summary");
 const requiredPackCount = document.querySelector("#required-pack-count");
 const coveredEgoCount = document.querySelector("#covered-ego-count");
+const missingEgoCount = document.querySelector("#missing-ego-count");
+const missingEgoList = document.querySelector("#missing-ego-list");
 const searchInput = document.querySelector("#ego-search");
 const keywordFilterSelect = document.querySelector("#ego-keyword-filter");
 const levelFilterSelect = document.querySelector("#ego-level-filter");
@@ -632,6 +634,7 @@ function calculateRoute() {
   state.routeCards = routeCards;
   renderRouteBoard();
   updateRouteSummary(selectedItems, routeCards);
+  renderMissingEgoList(selectedItems, routeCards);
 }
 
 function buildLockedPackByFloor() {
@@ -793,6 +796,72 @@ function updateRouteSummary(selectedItems, routeCards) {
 
   requiredPackCount.textContent = String(requiredPackIds.size);
   coveredEgoCount.textContent = String(coveredIds.size);
+}
+
+function renderMissingEgoList(selectedItems, routeCards) {
+  const chosenPackIds = new Set(routeCards.map((card) => card.packId).filter(Boolean));
+  const missingItems = selectedItems.filter((item) => !isItemCoveredByRoute(item, chosenPackIds));
+
+  missingEgoCount.textContent = String(missingItems.length);
+  missingEgoList.innerHTML = "";
+
+  if (!missingItems.length) {
+    const empty = document.createElement("div");
+    empty.className = "miss-empty";
+    empty.textContent = selectedItems.length
+      ? "当前路线已经覆盖所有已选 EGO。"
+      : "选择目标 EGO 后，这里会提示当前路线无法拿到的饰品。";
+    missingEgoList.appendChild(empty);
+    return;
+  }
+
+  const packMap = new Map(state.packs.map((pack) => [pack.id, pack]));
+
+  missingItems.forEach((item) => {
+    const row = document.createElement("article");
+    row.className = "miss-item";
+
+    const title = document.createElement("div");
+    title.className = "miss-item__title";
+    title.textContent = item.name;
+
+    const meta = document.createElement("div");
+    meta.className = "miss-item__meta";
+    meta.textContent = item.level ? `${item.level} | ${item.packDisplay}` : item.packDisplay;
+
+    const detail = document.createElement("div");
+    detail.className = "miss-item__detail";
+    detail.textContent = formatMissingAccess(item, packMap);
+
+    row.appendChild(title);
+    row.appendChild(meta);
+    row.appendChild(detail);
+    missingEgoList.appendChild(row);
+  });
+}
+
+function isItemCoveredByRoute(item, chosenPackIds) {
+  if (item.allPacks) {
+    return chosenPackIds.size > 0;
+  }
+  return (item.packOptions || []).some((packId) => chosenPackIds.has(packId));
+}
+
+function formatMissingAccess(item, packMap) {
+  if (item.allPacks) {
+    return "通用饰品：理论上可由任意已出现卡包获得。";
+  }
+
+  const accessList = (item.packOptions || [])
+    .map((packId) => packMap.get(packId))
+    .filter(Boolean)
+    .map((pack) => `第 ${pack.floors.join(" / ")} 层：${pack.name}`);
+
+  if (!accessList.length) {
+    return "未在卡包数据库中找到该饰品对应的卡包信息。";
+  }
+
+  return `可获取位置：${accessList.join("；")}`;
 }
 
 function renderRouteBoard() {

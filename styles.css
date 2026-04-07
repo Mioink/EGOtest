@@ -481,6 +481,74 @@ body::before {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.miss-panel {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.miss-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.miss-panel__header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.miss-panel__count {
+  min-width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(200, 86, 86, 0.16);
+  border: 1px solid rgba(200, 86, 86, 0.28);
+  color: #ffd9d9;
+  font-weight: 700;
+}
+
+.miss-list {
+  display: grid;
+  gap: 10px;
+}
+
+.miss-item,
+.miss-empty {
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.miss-empty {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.miss-item__title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.miss-item__meta {
+  color: var(--accent-2);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.miss-item__detail {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .route-board__header {
   margin: 20px 0 12px;
 }
