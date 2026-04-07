@@ -580,18 +580,19 @@ function calculateRoute() {
   const coveredLimitedPackIds = new Set();
   const usedPackIds = new Set();
   const routeCards = [];
+  const lockedPackByFloor = buildLockedPackByFloor();
 
   for (let floor = 1; floor <= 15; floor += 1) {
     const floorPacks = state.packs.filter(
       (pack) => Array.isArray(pack.floors) && pack.floors.includes(floor)
     );
-    const availablePacks = floorPacks.filter((pack) => !usedPackIds.has(pack.id));
-    const manualPackId = state.manualPackByFloor[floor];
-    const manualPack = availablePacks.find((pack) => pack.id === manualPackId) ?? null;
-
-    if (manualPackId && !manualPack) {
-      delete state.manualPackByFloor[floor];
-    }
+    const manualPack = lockedPackByFloor.get(floor) ?? null;
+    const reservedForOtherLocks = getReservedLockedPackIdsAfterFloor(lockedPackByFloor, floor);
+    const availablePacks = floorPacks.filter(
+      (pack) =>
+        !usedPackIds.has(pack.id) &&
+        !reservedForOtherLocks.has(pack.id)
+    );
 
     const chosenPack =
       manualPack ??
@@ -618,14 +619,45 @@ function calculateRoute() {
       floor,
       mode: stageTypeForFloor(floor),
       isManual: Boolean(manualPack),
-      availableOptions: buildFloorOptions(floorPacks, usedPackIds, chosenPack),
-      ...buildRouteDetails(chosenPack, limitedItems),
+      availableOptions: buildFloorOptions(
+        floorPacks,
+        usedPackIds,
+        chosenPack,
+        manualPack
+      ),
+      ...buildRouteDetails(chosenPack, limitedItems, manualPack),
     });
   }
 
   state.routeCards = routeCards;
   renderRouteBoard();
   updateRouteSummary(selectedItems, routeCards);
+}
+
+function buildLockedPackByFloor() {
+  const lockedPackByFloor = new Map();
+
+  Object.entries(state.manualPackByFloor).forEach(([floorKey, packId]) => {
+    const floor = Number(floorKey);
+    const pack = state.packs.find((item) => item.id === packId);
+    if (!pack) return;
+    if (!Array.isArray(pack.floors) || !pack.floors.includes(floor)) return;
+    lockedPackByFloor.set(floor, pack);
+  });
+
+  return lockedPackByFloor;
+}
+
+function getReservedLockedPackIdsAfterFloor(lockedPackByFloor, currentFloor) {
+  const reserved = new Set();
+
+  lockedPackByFloor.forEach((pack, floor) => {
+    if (floor > currentFloor) {
+      reserved.add(pack.id);
+    }
+  });
+
+  return reserved;
 }
 
 function chooseBestPackForFloor(
@@ -661,16 +693,21 @@ function scorePack(pack, limitedItems, coveredLimitedPackIds, selectedKeywords) 
   return unmetLimitedMatches * 100 + keywordOverlap * 10 + notePenalty + cursePenalty;
 }
 
-function buildFloorOptions(floorPacks, usedPackIds, chosenPack) {
+function buildFloorOptions(floorPacks, usedPackIds, chosenPack, manualPack = null) {
   return floorPacks
-    .filter((pack) => !usedPackIds.has(pack.id) || pack.id === chosenPack?.id)
+    .filter(
+      (pack) =>
+        !usedPackIds.has(pack.id) ||
+        pack.id === chosenPack?.id ||
+        pack.id === manualPack?.id
+    )
     .map((pack) => ({
       id: pack.id,
       name: pack.name,
     }));
 }
 
-function buildRouteDetails(chosenPack, limitedItems) {
+function buildRouteDetails(chosenPack, limitedItems, manualPack = null) {
   if (!chosenPack) {
     return {
       title: "本层已无可选卡包",
@@ -678,7 +715,9 @@ function buildRouteDetails(chosenPack, limitedItems) {
       icon: "./assets/packs/any-pack.svg",
       items: [],
       limitedCount: 0,
-      reason: "由于你前面已经选走了候选卡包，这一层不再重复出现相同卡包。",
+      reason: manualPack
+        ? "当前楼层手动锁定了卡包，但该卡包暂时无法用于路线计算。"
+        : "由于你前面已经选走了候选卡包，这一层不再重复出现相同卡包。",
       required: false,
     };
   }
@@ -694,6 +733,9 @@ function buildRouteDetails(chosenPack, limitedItems) {
   );
 
   const reasonParts = [];
+  if (manualPack && chosenPack.id === manualPack.id) {
+    reasonParts.push("当前楼层已按手动锁定优先保留该卡包。");
+  }
   if (required) {
     reasonParts.push("包含所选限定 EGO 所需卡包。");
   }
